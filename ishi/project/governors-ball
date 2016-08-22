@@ -1,0 +1,966 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+  
+<!-- Mirrored from www.ericryananderson.com/project/governors-ball by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2016 19:19:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all and (min-width: 769px)" />
+<link rel="stylesheet" type="text/css" href="../css/styles_mobile.css" media="all and (max-width: 768px)" />
+
+<script src="../../use.typekit.net/szb5mqd.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    		<title>Eric Ryan Anderson &#124; Scroll &#124; governors-ball</title>
+	  </head>
+
+  <body data-imageview="1" class="scroll ">
+
+    
+<!-- header / left nav -->
+<header>
+
+		<!--trigger-->
+		<div class="trigger inline">
+
+				<a class="logo v_middle" href="../index.html">
+						<img class="mobileOnly" src="../images/logo_black.png" alt="Eric Ryan Anderson" />
+				</a>
+
+				<div class="menuBtn mobileOnly">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+				</div>
+
+		</div>
+		<!--/trigger-->
+		
+		<div class="logoHolder desktopOnly">
+			<a href="../index.html"><img class="logo" src="../images/logo_black.png" alt="Eric Ryan Anderson" /></a>
+		</div>
+
+		<!-- nav menu -->
+		<nav class="menu">
+			<ul>
+
+				
+					
+					<li ><a href="../grid/overview.html" target="_parent" >OVERVIEW </a></li>
+
+				
+					
+					<li ><a href="../grid/portrait.html" target="_parent" >PORTRAIT </a></li>
+
+				
+					
+					<li ><a href="../grid/sport.html" target="_parent" >SPORT </a></li>
+
+				
+					
+					<li ><a href="../grid/music.html" target="_parent" >MUSIC </a></li>
+
+				
+					
+					<li ><a href="../p/projects.html" target="_parent" >PROJECTS </a></li>
+
+				
+					
+					<li ><a href="../motion.html" target="_parent" class="pageOn">MOTION </a></li>
+
+				
+					
+					<li class="desktopOnly"><a href="../lightbox.html" target="_parent" >LIGHTBOX (<span class="lightboxQty">0</span>)</a></li>
+
+				
+					
+					<li ><a href="../info.html" target="_parent" >INFO </a></li>
+
+				
+			</ul>
+		</nav>
+		<!-- nav menu -->
+
+		<ul class="social addb4">
+			
+						
+				<li class="v_middle"><a href="https://twitter.com/anderson_eric" target="_blank"><img src="../../ericryananderson.imgix.net/589_social-twitterpng.png" alt="Twitter" /></a></li>
+			
+						
+				<li class="v_middle"><a href="http://www.instagram.com/ericryananderson" target="_blank"><img src="../../ericryananderson.imgix.net/589_social-instagrampng.png" alt="Instagram" /></a></li>
+			
+					</ul>
+
+</header>
+<!-- END header / left nav -->
+
+      <!-- main content -->
+      <main>
+
+        <div class="close" onclick="location.href='../p/motion.html'">
+          <span></span>
+          <span></span>
+        </div>
+
+		<!-- toolbar -->
+		<div class="toolbar addb4">
+
+			<div class="icon filter v_middle">
+				<span class="one"></span>
+				<span class="two"></span>
+				<span class="three"></span>
+			</div>
+			<p class="v_middle desktopOnly">Filter</p>
+
+			
+				<div class="right addb4 desktopOnly">
+					<div class="icon slideview v_middle desktopOnly" onclick="location.href='../project-slideshow/governors-ball.html';">
+						<img src="../images/icon-slideshow.png" />
+					</div>
+					<div class="icon circles v_middle" onclick="location.href='../project-grid/governors-ball.html';">
+						<span></span><span></span><span></span>
+						<span></span><span></span><span></span>
+						<span></span><span></span><span></span>
+					</div>
+					<div class="icon squares active v_middle desktopOnly" onclick="location.href='governors-ball#img0';">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+			
+		</div>
+		<!-- /toolbar -->
+
+        
+			<table class="scrollMe" cellpadding="0" cellspacing="0">
+
+			  <tr>
+
+				
+				
+					
+					<td class="cell" id="1">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#1"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_001.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_001.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8122">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Benjamin Booker</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="2">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#2"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_002.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_002.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8128">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Flume</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="3">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#3"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_003.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_003.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8127">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Echosmith</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="4">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#4"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_004.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_004.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8123">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">J Roddy Walston & the Business</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="5">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#5"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_005.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_005.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8126">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Mayor Hawthorne</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="6">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#6"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_006.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_006.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8125">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="7">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#7"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_007.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_007.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8130">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Weird Al Yankovic</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="8">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#8"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_008.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_008.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8124">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="9">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#9"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_009.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_009.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8129">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  <p class="caption">Conor Oberst</p>					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="10">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#10"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_010.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_010.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8136">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="11">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#11"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_011.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_011.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8131">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="12">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#12"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_012.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_012.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8133">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="13">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#13"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_013.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_013.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8148">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="14">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#14"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_014.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_014.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8132">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="15">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#15"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_015.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_015.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8134">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="16">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#16"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_016.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_016.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8135">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="17">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#17"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_019.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_019.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8139">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="18">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#18"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_020.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_020.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8138">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="19">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#19"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_021.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_021.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8145">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="20">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#20"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_023.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_023.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8140">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="21">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#21"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_022.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_022.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8141">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="22">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#22"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_024.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_024.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8142">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="23">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#23"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_025.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_025.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8143">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="24">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#24"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_027.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_027.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8146">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="25">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#25"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_028.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_028.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8149">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="26">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#26"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_029.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_029.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8147">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="27">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#27"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_030.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_030.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8150">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="28">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#28"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_031.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_031.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8153">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="29">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#29"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_032.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_032.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8151">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="30">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#30"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_033.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_033.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8152">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="31">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#31"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_026.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_026.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8144">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+					
+					<td class="cell" id="32">
+
+						
+							<div class="theHolder ">
+								<a href="../project-slideshow/governors-ball.html#32"><img class="photo imgix-fluid-scroll" src="../../ericryananderson.imgix.net/siteGray/7991_ericryananderson_govball15_018.png" data-src="../../ericryananderson.imgix.net/7991_ericryananderson_govball15_018.jpg"></a>
+								<p class="lbox desktopOnly" data-id="8137">
+																		  <span class="shape"></span>
+									  <span class="v_middle text">ADD TO LIGHTBOX</span>
+								  								</p>
+							</div>
+
+						
+					  <div class="info">
+						  					  </div>
+
+					</td>
+
+				
+			  </tr>
+
+			</table>
+
+			<div id="next" style="display: none;"></div>
+			<div id="prev" style="display: none;"></div>
+
+
+		
+      </main>
+      <!-- main content -->
+
+      <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/modernizr.custom.24171.js"></script>
+<script src="../js/imgix.min.js"></script>
+<script src="../js/masonry.pkgd.min.js"></script>
+<script src="../js/imagesloaded.pkgd.js" ></script>
+<script src="../js/AnimOnScroll.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/skrollr.js"></script>
+<script src="../js/jquery.scrollTo.min.js"></script>
+<script src="../js/jquery.cycle2.min.js"></script>
+<script src="../js/site.js" ></script>
+
+<script>
+	var bgOptions = {
+	  fluidClass: 'imgix-fluid-bg',
+	  updateOnResizeDown: true,
+	  updateOnPinchZoom: true,
+	  pixelStep: 10,
+	  autoInsertCSSBestPractices: true,
+	  onChangeParamOverride: function(w, h) {
+		 /* Override and insert additional imgix parameters*/
+		 /* Currently displaying information about the image size and dpr */
+		/*
+		var dpr = Math.ceil(window.devicePixelRatio*10) /10;
+		return {
+		  "txt": "w:" + w + " h:" +h + " dpr:" + dpr,
+		  "txtalign": "center,bottom",
+		  "txtsize": 20,
+		  "txtfont": "Helvetica%20Neue,bold",
+		  "txtclr": "ffffffff",
+		  "txtpad": 20,
+		  "txtfit": 'max',
+		  "exp": -2
+		};
+		*/
+	  }
+	};
+
+	var imgOptions = {
+	  fluidClass: 'imgix-fluid',
+	  updateOnResizeDown: true,
+	  updateOnPinchZoom: true,
+	  pixelStep: 10,
+	  autoInsertCSSBestPractices: true
+	}
+
+	imgix.onready(function() {
+	  imgix.fluid(bgOptions);
+	  imgix.fluid(imgOptions);
+	});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73214334-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+
+<!-- Mirrored from www.ericryananderson.com/project/governors-ball by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2016 19:31:09 GMT -->
+</html>
+
+
+	<script>
+
+		$(document).ready(function() {
+
+			function fluid() {
+
+				var bWidth = $(window).width();
+				var bHeight = $(window).height();
+
+				if ( bHeight >= 915 ) {
+					var adjHeight = bHeight * .83;
+				} else if ( bHeight < 915 && bHeight >= 750 ) {
+					var adjHeight = bHeight * .80;
+				} else if ( bHeight < 750 && bHeight >= 600 ) {
+					var adjHeight = bHeight * .75;
+				} else if ( bHeight < 600 ) {
+					var adjHeight = bHeight * .69;
+				}
+				$('.scroll .photo').height(adjHeight);
+				$('.scroll iframe').height(adjHeight);
+
+				$('.scroll iframe').each(function() {
+
+					var theVideo = $(this);
+					var theHeight = adjHeight;
+					videoSizeHeight(theVideo, theHeight, "no");
+
+				});
+
+			}
+
+			fluid();
+
+			$(window).resize(function() {
+
+				fluid();
+				scroller();
+
+			});
+
+		});
+
+		function videoSizeHeight(theVideo, theHeight, ignoreWidth) {
+
+			var vidW = theVideo.attr('width');
+			var vidH = theVideo.attr('height');
+			var vidRatio = vidH / vidW;
+
+			var newWidth = theHeight / vidRatio;
+
+			if (ignoreWidth === "no") {
+				theVideo.width(newWidth).height(theHeight);
+			} else {
+				theVideo.height(theHeight);
+			}
+
+		}
+
+		var scrollOptions = {
+		  fluidClass: 'imgix-fluid-scroll',
+		  updateOnResizeDown: true,
+		  updateOnPinchZoom: true,
+		  pixelStep: 10,
+		  autoInsertCSSBestPractices: true
+		}
+
+		/* LFET RIGHT ARROW CLICKS */
+		$('#next').click(function() {
+			$('.swipeCallout').fadeTo(300,0);
+			var currentImg = $('body').data('imageview');
+			var nextImg = currentImg + 1;
+			var theLeft = ($('#'+nextImg).offset().left - 59);
+			$('body').scrollTo(theLeft, 300, {
+				axis:'x',
+				onAfter:function() {
+
+					$('body').data('imageview', nextImg);
+				}
+
+			});
+
+		});
+
+		$('#prev').click(function() {
+			$('.swipeCallout').fadeTo(300,0);
+			var currentImg = $('body').data('imageview');
+			var nextImg = currentImg - 1;
+			var theLeft = ($('#'+nextImg).offset().left - 59);
+			$('body').scrollTo(theLeft, 300, {
+				axis:'x',
+				onAfter:function() {
+
+					$('body').data('imageview', nextImg);
+				}
+
+			});
+
+		});
+
+		function scroller() {
+
+			var theHash = window.location.hash;
+			var cleanHash = parseInt(theHash.replace("#img", ""));
+			console.log(cleanHash);
+			$('body').data('imageview', cleanHash);
+			var theLeft = ($('#'+cleanHash).offset().left - 59);
+
+			$('body').scrollTo(theLeft, 300, {
+				axis:'x',
+				onAfter:function() {
+
+					var realImg = $('#'+cleanHash).find('.photo').data('src');
+					$('#'+cleanHash).find('.photo').attr('src', realImg);
+
+					imgix.fluid(scrollOptions);
+				}
+
+			});
+
+		}
+
+		$(window).load(function() {
+
+			scroller();
+
+		});
+
+	</script>
+
