@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
     
     <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
+    
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all and (min-width: 769px)" />
     <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" media="all and (max-width: 768px)" />
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
@@ -27,8 +29,6 @@
     
 
     <!--- Scripts -->
-    <script src="../use.typekit.net/szb5mqd.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
     <style>
@@ -92,14 +92,15 @@
         
         <!------------------------------------------------------------->
         <!-- PAGE 1 -->
-        <div class="orbit intro f-vert" 
+        <div id="intro" class="orbit intro f-vert" 
              role="region" 
              aria-label="Ishi Doctrine" 
              data-orbit>
             
-            <div class="slide_" >
+            <div class="overlay_"></div>
+            <div class="slide_ f-vert" >
             
-              <ul class="orbit-container f-center">
+              <ul class="orbit-container ">
 <!--
                     <button class="orbit-previous">
                         <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
@@ -164,7 +165,7 @@
     
       <!------------------------------------------------------------->
       <!-- PAGE 2 -->
-      <section class="homeGrid grid">
+      <section id="page2" class="homeGrid grid">
         
         <!-- header / left nav -->
         <header class="homeHeader"
@@ -188,7 +189,10 @@
             <!--/trigger-->
 
             <div class="logoHolder desktopOnly">
-                <a href="index.html"><img class="logo" src="images/logo_black.png" alt="Eric Ryan Anderson" /></a>
+                <div class="row columns">
+                    <p class="logoTitle logo black_">ISHI DIGITAL</p>
+                
+                </div>
             </div>
 
             <!-- nav menu -->
@@ -212,12 +216,7 @@
             </nav>
             <!-- nav menu -->
 
-            <ul class="social addb4">
-				<li class="v_middle"><a href="https://twitter.com/anderson_eric" target="_blank"><img src="../ericryananderson.imgix.net/589_social-twitterpng.png" alt="Twitter" /></a></li>
-			
-						
-				<li class="v_middle"><a href="http://www.instagram.com/ericryananderson" target="_blank"><img src="../ericryananderson.imgix.net/589_social-instagrampng.png" alt="Instagram" /></a></li>			
-            </ul>
+            
 
     </header>
     <!-- END header / left nav -->
@@ -257,37 +256,9 @@
 				    </p>
 
 				    <a href="scroll/overview.html#img1">
-					   <img class="photo" src="../ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png" rel="../ericryananderson.imgix.net/569_ericryananderson_ugobk_046.jpg">
+					   <img class="photo" src="" rel="">
 				    </a>
 				</li>
-				
-				<li class="grid-item">
-					<p class="lbox desktopOnly" data-id="9250">
-						<span class="shape"></span>
-				        <span class="v_middle text">ADD TO LIGHTBOX</span>
-					</p>
-
-				    <a href="scroll/overview.html#img2">
-					   <img class="photo" src="../ericryananderson.imgix.net/siteGray/569_anderson_gretagerwig_11x14w.png" rel="../ericryananderson.imgix.net/569_anderson_gretagerwig_11x14w.jpg">
-				    </a>
-				</li>
-
-			
-				
-				<li class="grid-item  ">
-
-					<p class="lbox desktopOnly" data-id="9253">
-													<span class="shape"></span>
-							<span class="v_middle text">ADD TO LIGHTBOX</span>
-											</p>
-
-				  <a href="scroll/overview.html#img3">
-					<img class="photo" src="../ericryananderson.imgix.net/siteGray/569_era_gretagerwig_4939.png" rel="../ericryananderson.imgix.net/569_era_gretagerwig_4939.jpg">
-				  </a>
-				</li>
-
-			
-
 			
 		</ul>
 
@@ -362,9 +333,9 @@
     <script>
         $("#intro").vegas({
             slides: [
-            { src: "/assets/passive/light-tunnel.jpg" },
+            { src: "images/img/photo2.jpg" },
                 ],
-                overlay: '/assets/overlays/01.png'
+                overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
             });
     </script>
     
