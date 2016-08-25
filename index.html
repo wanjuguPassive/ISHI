@@ -1,147 +1,417 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
+<!DOCTYPE html>
+<html lang="en-US">
+
+    
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
-	<style type="text/css">
-        body {
-            margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-            background: #77b;
+    <title>ISHI</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+    
+    <!--- Foundation --->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all and (min-width: 769px)" />
+    <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" media="all and (max-width: 768px)" />
+    <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    
+
+    <!--- Scripts -->
+    <script src="../use.typekit.net/szb5mqd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <style>
+        html,
+        body,
+        div,
+        h1,
+        p,
+        a,
+        video {
+          margin: 0 auto !important;
+          padding: 0 !important;
         }
-        body, td {
-            font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-            }
 
-        #subTitle {
-            background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-            }
+        html, body {
+            width: 100%;
+            min-width: 100%;
+        /*    min-height: 800px;*/
+            margin: 0;
+            padding: 0;
+            border: 0;
+            line-height: 1;
+            margin: 0;
+            font-size: .9rem;
 
-        #siteNavigation a, #siteNavigation .current {
-            font-weight: bold;  color: #448;
-            }
-        #siteNavigation a:link    { text-decoration: none; }
-        #siteNavigation a:visited { text-decoration: none; }
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #555;
 
-        #siteNavigation .current { background-color: #ccd; }
-
-        #siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-        #siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-        a:link    { text-decoration: underline;  color: #00f; }
-        a:visited { text-decoration: underline;  color: #000; }
-        a:hover   { text-decoration: underline;  color: #c00; }
-        a:active  { text-decoration: underline; }
-
-        #pageContent {
-            clear: both;
-            border-bottom: 6px solid #000;
-            padding: 10px;  padding-top: 20px;
-            line-height: 1.65em;
-            background-image: url(backblue.gif);
-            background-repeat: no-repeat;
-            background-position: top right;
-            }
-
-        #pageContent, #siteNavigation {
-            background-color: #ccd;
-            }
-
-
-        .imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-        .imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-        hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-        h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-        h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-        h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-        h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-        .blak { background-color: #000; }
-        .hide { display: none; }
-        .tableWidth { min-width: 400px; }
-        .tblRegular { border-collapse: collapse; }
-        .tblRegular td { 
-            padding: 6px;  
-            background-image: url(fade.gif);  
-            border: 2px solid #99c; 
         }
-        .tblHeaderColor, .tblHeaderColor td { background: #99c; }
-        .tblNoBorder td   { border: 0; }
+        
+        .row, .columns, .column {
+            margin: 0 auto !important;
+          padding: 0 !important;
+        }
 
+        h1, h2, h3, h4, h5 {
+            font-weight: bold;
+        }
+        
+        .slider {
+            width: 100%;
+/*            margin: 100px auto;*/
+        }
 
     </style>
-
-<head>
-
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-    
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
-
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
 </head>
+
+<!-- ========================================================= -->    
+<body class="home masonry">
+
+    <div class="homeLoad"></div>
+    
+    <!-- logo -->
+    <img class="logo logo_" src="images/logo.jpg" alt="Ishi Digital"
+      data-anchor-target=".intro"
+    />
+
+    <!-- main content -->
+    <main class="expanded row columns">  
+        
+        <!------------------------------------------------------------->
+        <!-- PAGE 1 -->
+        <div class="orbit intro f-vert" 
+             role="region" 
+             aria-label="Ishi Doctrine" 
+             data-orbit>
+            
+            <div class="slide_" >
+            
+              <ul class="orbit-container f-center">
+<!--
+                    <button class="orbit-previous">
+                        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+                    </button>
+
+                    <button class="orbit-next">
+                        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+                    </button>
+-->
+
+                    <li class="is-active orbit-slide ">
+                      <div class="logo_text white_ f-center">
+                        <a href="#" class="" > CREATIVE VISUAL LIBRARY FOR DIGITAL CAMPAIGNS </a>
+                    </div>
+                    </li>
+
+                    <li class="orbit-slide f-center">
+                      <div class="logo_text  white_ f-center">
+                        <a href="#" class="" > SOCIAL AND DIGITAL CURATOR </a>
+                    </div>
+                    </li>
+              
+              </ul>
+            
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0">
+                    <span class="show-for-sr">First slide details.</span>
+                    <span class="show-for-sr">Current Slide</span>
+                </button>
+                <button data-slide="1">
+                    <span class="show-for-sr">Second slide details.</span>
+                </button>
+              </nav>
+            </div>
+              <!-- scroll down button -->
+            <div class="expanded row columns scrollDown_ f-center">
+              <div class="scrollCue f-center"
+                data-anchor-target=".intro"
+                data-100="opacity: 1;"
+                data-250="opacity: 0;"
+              >
+                    <span></span>
+              </div>
+            </div>
+            
+        </div>
+        
+        <section class="" >
+              
+<!--
+        <img class="loadMe" src="images/sample_content/splash_img01.jpg" />
+        <img class="logo v_middle" src="images/logo_white.png" alt="Eric Ryan Anderson"
+          data-anchor-target=".intro"
+          data-start="transform: translateY(0px); opacity: 1;"
+          data-top-bottom="transform: translateY(170px); opacity: .2"
+          />
+-->
+          
             
             
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="www.ericryananderson.com/index.html">
-						www.ericryananderson.com/index.html
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.48-22 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=www.ericryananderson.com/index.html">
+      </section>
+    
+      <!------------------------------------------------------------->
+      <!-- PAGE 2 -->
+      <section class="homeGrid grid">
+        
+        <!-- header / left nav -->
+        <header class="homeHeader"
+            data-anchor-target=".homeGrid"
+            data-start="position: absolute; opacity: 0"
+            data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
+            data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
+
+            <!--trigger-->
+            <div class="trigger inline">
+                <a class="logo v_middle" href="index-2.html">
+                        <img class="mobileOnly" src="images/logo_black.png" alt="Eric Ryan Anderson" />
+                </a>
+
+                <div class="menuBtn mobileOnly">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                </div>
+            </div>
+            <!--/trigger-->
+
+            <div class="logoHolder desktopOnly">
+                <a href="index.html"><img class="logo" src="images/logo_black.png" alt="Eric Ryan Anderson" /></a>
+            </div>
+
+            <!-- nav menu -->
+            <nav class="menu">
+                <ul>
+					<li ><a href="grid/overview.html" target="_parent" class="pageOn">OVERVIEW </a></li>
+					
+					<li ><a href="grid/portrait.html" target="_parent" >PORTRAIT </a></li>
+					
+					<li ><a href="grid/sport.html" target="_parent" >SPORT </a></li>
+					
+					<li ><a href="grid/music.html" target="_parent" >MUSIC </a></li>
+					
+					<li ><a href="p/projects.html" target="_parent" >PROJECTS </a></li>
+					
+					<li ><a href="motion.html" target="_parent" >MOTION </a></li>
+					<li class="desktopOnly"><a href="lightbox.html" target="_parent" >LIGHTBOX (<span class="lightboxQty">0</span>)</a></li>
+
+					<li ><a href="info.html" target="_parent" >INFO </a></li>
+                </ul>
+            </nav>
+            <!-- nav menu -->
+
+            <ul class="social addb4">
+				<li class="v_middle"><a href="https://twitter.com/anderson_eric" target="_blank"><img src="../ericryananderson.imgix.net/589_social-twitterpng.png" alt="Twitter" /></a></li>
+			
+						
+				<li class="v_middle"><a href="http://www.instagram.com/ericryananderson" target="_blank"><img src="../ericryananderson.imgix.net/589_social-instagrampng.png" alt="Instagram" /></a></li>			
+            </ul>
+
+    </header>
+    <!-- END header / left nav -->
+		
+		<!-- toolbar -->
+		<div class="toolbar addb4 desktopOnly"
+			data-anchor-target=".homeHeader"
+			data-25-top="opacity: 0;"
+			data-top="opacity: 1;">			
+			
+				<div class="right addb4 desktopOnly">
+					<div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
+						<img src="images/icon-slideshow.png" />
+					</div>
+					<div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
+						<span></span><span></span><span></span>
+						<span></span><span></span><span></span>
+						<span></span><span></span><span></span>
+					</div>
+					<div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			
+		</div>
+		<!-- /toolbar -->
+		
+		<ul class="grid effect-1" id="grid">
+			<div class="grid-sizer"></div>
+			<div class="gutter-sizer"></div>
+				<li class="grid-item  ">
+
+					<p class="lbox desktopOnly" data-id="9246">
+				        <span class="shape"></span>
+				        <span class="v_middle text">ADD TO LIGHTBOX</span>
+				    </p>
+
+				    <a href="scroll/overview.html#img1">
+					   <img class="photo" src="../ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png" rel="../ericryananderson.imgix.net/569_ericryananderson_ugobk_046.jpg">
+				    </a>
+				</li>
+				
+				<li class="grid-item">
+					<p class="lbox desktopOnly" data-id="9250">
+						<span class="shape"></span>
+				        <span class="v_middle text">ADD TO LIGHTBOX</span>
+					</p>
+
+				    <a href="scroll/overview.html#img2">
+					   <img class="photo" src="../ericryananderson.imgix.net/siteGray/569_anderson_gretagerwig_11x14w.png" rel="../ericryananderson.imgix.net/569_anderson_gretagerwig_11x14w.jpg">
+				    </a>
+				</li>
+
+			
+				
+				<li class="grid-item  ">
+
+					<p class="lbox desktopOnly" data-id="9253">
+													<span class="shape"></span>
+							<span class="v_middle text">ADD TO LIGHTBOX</span>
+											</p>
+
+				  <a href="scroll/overview.html#img3">
+					<img class="photo" src="../ericryananderson.imgix.net/siteGray/569_era_gretagerwig_4939.png" rel="../ericryananderson.imgix.net/569_era_gretagerwig_4939.jpg">
+				  </a>
+				</li>
+
+			
+
+			
+		</ul>
+
+        
+      </section>
+
+    </main>
+    <!-- main content -->
+
+    <footer>
+	<div class="inner">
+		<ul>
+									
+				<li class="v_middle"><a href="grid/overview.html" target="_parent">OVERVIEW</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="grid/portrait.html" target="_parent">PORTRAIT</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="grid/sport.html" target="_parent">SPORT</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="grid/music.html" target="_parent">MUSIC</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="p/projects.html" target="_parent">PROJECTS</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="motion.html" target="_parent">MOTION</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="lightbox.html" target="_parent">LIGHTBOX</a></li>
+				
+					
+						
+				<li class="v_middle"><a href="info.html" target="_parent">INFO</a></li>
+				
+			
+		</ul>
+		<p>&copy; 2016 Eric Ryan Anderson.<br class="mobileOnly" />Site Powered by <a href="http://eastofwestern.com/" target="_blank">East of Western</a></p>
+	</div>
+</footer>
+
+    
+    <!----------------------------------------------------------->
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script>
+        $(document).foundation(); 
+    </script>
+    <script src="js/modernizr.custom.24171.js"></script>
+    <script src="js/imgix.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.js" ></script>
+    <script src="js/AnimOnScroll.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/site.js" ></script>
+    
+    <!----------------------------------------->
+    <!--Vegas-->
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.js"></script>
+<!--    <script type="text/javascript"  src="js/vegas-scripts.js"></script>-->
+    <script>
+        $("#intro").vegas({
+            slides: [
+            { src: "/assets/passive/light-tunnel.jpg" },
+                ],
+                overlay: '/assets/overlays/01.png'
+            });
+    </script>
+    
+    <script>
+        var bgOptions = {
+          fluidClass: 'imgix-fluid-bg',
+          updateOnResizeDown: true,
+          updateOnPinchZoom: true,
+          pixelStep: 10,
+          autoInsertCSSBestPractices: true,
+          onChangeParamOverride: function(w, h) {
+             /* Override and insert additional imgix parameters*/
+             /* Currently displaying information about the image size and dpr */
+            /*
+            var dpr = Math.ceil(window.devicePixelRatio*10) /10;
+            return {
+              "txt": "w:" + w + " h:" +h + " dpr:" + dpr,
+              "txtalign": "center,bottom",
+              "txtsize": 20,
+              "txtfont": "Helvetica%20Neue,bold",
+              "txtclr": "ffffffff",
+              "txtpad": 20,
+              "txtfit": 'max',
+              "exp": -2
+            };
+            */
+          }
+        };
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+        var imgOptions = {
+          fluidClass: 'imgix-fluid',
+          updateOnResizeDown: true,
+          updateOnPinchZoom: true,
+          pixelStep: 10,
+          autoInsertCSSBestPractices: true
+        }
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+        imgix.onready(function() {
+          imgix.fluid(bgOptions);
+          imgix.fluid(imgOptions);
+        });
+    </script>
 
+    
+<!--------------------------------------------------------------->
+<!--------------------------------------------------------------->
 </body>
 
 </html>
-
-
