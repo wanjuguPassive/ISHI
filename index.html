@@ -36,8 +36,7 @@
         body,
         div,
         h1,
-        p,
-        a,
+        
         video {
           margin: 0 auto !important;
           padding: 0 !important;
@@ -56,7 +55,7 @@
 
             -webkit-background-size: cover;
             background-size: cover;
-            color: #555;
+            color: #0e0e0e !important;
 
         }
         
@@ -66,12 +65,19 @@
         }
 
         h1, h2, h3, h4, h5 {
-            font-weight: bold;
+            font-weight: 500;
         }
         
-        .slider {
-            width: 100%;
-/*            margin: 100px auto;*/
+        body {
+            height: auto;
+           
+        }
+        main {
+            height: auto;
+            position: relative;
+        }
+        footer {
+            position: relative;
         }
 
     </style>
@@ -81,25 +87,38 @@
 <body class="home masonry">
 
     <div class="homeLoad"></div>
+
     
     <!-- logo -->
+<!--
     <img class="logo logo_" src="images/logo.jpg" alt="Ishi Digital"
       data-anchor-target=".intro"
     />
+-->
 
     <!-- main content -->
     <main class="expanded row columns">  
         
         <!------------------------------------------------------------->
         <!-- PAGE 1 -->
+       
+        <!----------------- CONTENT------------------------->
+        
         <div id="intro" class="orbit intro f-vert" 
              role="region" 
              aria-label="Ishi Doctrine" 
              data-orbit>
             
+            
             <div class="overlay_"></div>
             <div class="slide_ f-vert" >
             
+                <!--desktopOnly-->
+                <div class="logoHolder desktopOnly row columns">
+                    <div class="logo f-center">
+                        <p class="logoTitle white_ ">ISHI DIGITAL</p>
+                    </div>
+                </div>
               <ul class="orbit-container ">
 <!--
                     <button class="orbit-previous">
@@ -140,7 +159,7 @@
               <div class="scrollCue f-center"
                 data-anchor-target=".intro"
                 data-100="opacity: 1;"
-                data-250="opacity: 0;"
+                data-250="opacity: 1;"
               >
                     <span></span>
               </div>
@@ -165,10 +184,189 @@
     
       <!------------------------------------------------------------->
       <!-- PAGE 2 -->
-      <section id="page2" class="homeGrid grid">
+      <section id="page2" class="homeGrid expanded row columns">
+          
+          <!----------------- HEADER------------------------->
+          <div class="homeHeader expanded row columns"
+               data-anchor-target=".homeGrid"
+                data-start="position: absolute; opacity: 0"
+                data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
+                data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
         
+                <!--desktopOnly-->
+                <div class="logoHolder desktopOnly row columns">
+                    <div class="logo f-center">
+                        <p class="logoTitle black_ ">ISHI DIGITAL</p>
+                    </div>
+                </div>
+
+                <!--trigger/mobileOnly-->
+                <div class="trigger inline">
+                    <a class="logo v_middle" href="#">
+                        <p class="logoTitle mobileOnly logo white_">ISHI DIGITAL</p>
+                    </a>
+
+                    <div class="menuBtn mobileOnly">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                    </div>
+                </div>
+                <!--/trigger-->
+              
+                <nav class="menu">
+                    <ul id="header" data-tabs
+                        class="black_ tabs f-center expanded row columns"
+                        >
+                          <li class="tabs-title is-active">
+                              <a href="#about" aria-selected="true">ISHI</a>
+                          </li>
+                          <li class="tabs-title ">
+                              <a href="#gallery">GALLERY</a>
+                          </li>
+                            <li class="tabs-title">
+                              <a href="#sport" >SPORT</a>
+                          </li>
+                          <li class="tabs-title">
+                              <a href="#info">INFO</a>
+                          </li>
+                    </ul> <!-- header end -->
+                    
+                    <!--- content -->
+                    <div class="tabs-content expanded row columns" data-tabs-content="header">
+                        <!------------------------------------------->
+                        <!--- ABOUT ---->
+                          <div class="tabs-panel is-active container" id="about">
+                            
+                              <div class="ab_ f-vert">
+                                  <h5>about</h5>
+                                      <p class="ttl">As a Visual Library: </p>
+                                      <p>Creative, themed & finely-curated Photography for your Digital artworks,Social Media campaigns, Visual Projects, Exhibitions & Digital Platforms</p>
+
+                                      <p class="ttl">As a Social/Digital Curator: </p>
+                                      <p>Equipping Creatives and Creative platforms in the Business w/ Digital strategy, Content Creation & Moderation, Social Reports & Audits, plus Digital Training.</p>
+                              </div>
+                              
+                              
+                              <div class="why_ f-vert">
+                                  <h5>why 'Ishi'</h5>
+
+                                    <p>‘Ishi’ is a Swahili word meaning ‘Live’. Live where your heart is. Live where your Art is. We hope to inspire others to live doing what they truly love and are passionate about (where your heart is) as well as what they are gifted in (where your Art is).
+                                        <br>
+                                        <br>
+                                    As for us, the Visual-Digital Narrative did it. Here’s to those who love to create, and to do so boldly. For those who dare to live through their Art.</p>
+                              </div>
+                          </div>
+
+                        <!------------------------------------------->
+                        <!--- GALLERY ---->
+                        <div class="tabs-panel container" id="gallery">
+                            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+
+
+                            <!-- toolbar -->
+                            <div class="toolbar addb4 desktopOnly"
+                                data-anchor-target=".homeHeader"
+                                data-25-top="opacity: 0;"
+                                data-top="opacity: 1;">			
+
+                                    <div class="right addb4 desktopOnly">
+                                        <div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
+                                            <img src="images/icon-slideshow.png" />
+                                        </div>
+                                        <div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
+                                            <span></span><span></span><span></span>
+                                            <span></span><span></span><span></span>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <!-- /toolbar -->
+
+                            <ul class="grid effect-1 row columns " id="grid">
+                                <div class="grid-sizer"></div>
+                                <div class="gutter-sizer"></div>
+                                                                
+                                    <li class="grid-item">
+
+                                        <p class="lbox desktopOnly" data-id="9246">
+                                            <span class="shape"></span>
+                                            <span class="v_middle text">ADD TO LIGHTBOX</span>
+                                        </p>
+
+                                        <a href="#">
+                                           <img class="photo"          src="ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png"
+                                            rel="ericryananderson.imgix.net/588_ericryananderson_music_098.jpg">
+                                        </a>
+                                    </li>
+                                
+                                    <li class="grid-item  ">
+
+                                        <p class="lbox desktopOnly" data-id="9246">
+                                            <span class="shape"></span>
+                                            <span class="v_middle text">ADD TO LIGHTBOX</span>
+                                        </p>
+
+                                          <a href="#">
+                                            <img class="photo" src="ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png" rel="ericryananderson.imgix.net/569_ericryananderson_ugobk_046.jpg">
+                                          </a>
+                                    </li>
+
+
+
+                                    <li class="grid-item  ">
+                                        <p class="lbox desktopOnly" data-id="9250">
+                                            <span class="shape"></span>
+                                            <span class="v_middle text">ADD TO LIGHTBOX</span>
+                                        </p>
+
+                                          <a href="#">
+                                            <img class="photo" src="ericryananderson.imgix.net/siteGray/569_anderson_gretagerwig_11x14w.png" rel="ericryananderson.imgix.net/569_anderson_gretagerwig_11x14w.jpg">
+                                          </a>
+                                    </li>
+
+
+
+                                    <li class="grid-item  ">
+
+                                        <p class="lbox desktopOnly" data-id="9253">
+                                            <span class="shape"></span>
+                                            <span class="v_middle text">ADD TO LIGHTBOX</span>
+                                        </p>
+
+                                      <a href="#">
+                                        <img class="photo" src="ericryananderson.imgix.net/siteGray/569_era_gretagerwig_4939.png" rel="ericryananderson.imgix.net/569_era_gretagerwig_4939.jpg">
+                                      </a>
+                                    </li>
+
+                            </ul>
+                        </div>
+
+                        <!------------------------------------------->
+                        <!--- XXXXX ---->
+                            <div class="tabs-panel " id="sport">
+                            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                          </div>
+
+                        <!------------------------------------------->
+                        <!--- INFO ---->
+                        <div class="tabs-panel " id="info">
+                            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                          </div>
+                    </div>
+                </nav>
+        </div>
+          
+        
+        
+                
         <!-- header / left nav -->
-        <header class="homeHeader"
+        <header class="homeHeader version2"
             data-anchor-target=".homeGrid"
             data-start="position: absolute; opacity: 0"
             data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
@@ -177,7 +375,7 @@
             <!--trigger-->
             <div class="trigger inline">
                 <a class="logo v_middle" href="index-2.html">
-                        <img class="mobileOnly" src="images/logo_black.png" alt="Eric Ryan Anderson" />
+                        <img class="mobileOnly" src="images/logo_black.png" alt="" />
                 </a>
 
                 <div class="menuBtn mobileOnly">
@@ -198,19 +396,12 @@
             <!-- nav menu -->
             <nav class="menu">
                 <ul>
-					<li ><a href="grid/overview.html" target="_parent" class="pageOn">OVERVIEW </a></li>
+					<li ><a href="grid/overview.html" target="_parent" class="pageOn">ABOUT </a></li>
 					
-					<li ><a href="grid/portrait.html" target="_parent" >PORTRAIT </a></li>
+					<li ><a href="grid/portrait.html" target="_parent" >GALLERY </a></li>
 					
 					<li ><a href="grid/sport.html" target="_parent" >SPORT </a></li>
 					
-					<li ><a href="grid/music.html" target="_parent" >MUSIC </a></li>
-					
-					<li ><a href="p/projects.html" target="_parent" >PROJECTS </a></li>
-					
-					<li ><a href="motion.html" target="_parent" >MOTION </a></li>
-					<li class="desktopOnly"><a href="lightbox.html" target="_parent" >LIGHTBOX (<span class="lightboxQty">0</span>)</a></li>
-
 					<li ><a href="info.html" target="_parent" >INFO </a></li>
                 </ul>
             </nav>
@@ -221,46 +412,7 @@
     </header>
     <!-- END header / left nav -->
 		
-		<!-- toolbar -->
-		<div class="toolbar addb4 desktopOnly"
-			data-anchor-target=".homeHeader"
-			data-25-top="opacity: 0;"
-			data-top="opacity: 1;">			
-			
-				<div class="right addb4 desktopOnly">
-					<div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
-						<img src="images/icon-slideshow.png" />
-					</div>
-					<div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
-						<span></span><span></span><span></span>
-						<span></span><span></span><span></span>
-						<span></span><span></span><span></span>
-					</div>
-					<div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-			
-		</div>
-		<!-- /toolbar -->
 		
-		<ul class="grid effect-1" id="grid">
-			<div class="grid-sizer"></div>
-			<div class="gutter-sizer"></div>
-				<li class="grid-item  ">
-
-					<p class="lbox desktopOnly" data-id="9246">
-				        <span class="shape"></span>
-				        <span class="v_middle text">ADD TO LIGHTBOX</span>
-				    </p>
-
-				    <a href="scroll/overview.html#img1">
-					   <img class="photo" src="" rel="">
-				    </a>
-				</li>
-			
-		</ul>
 
         
       </section>
@@ -270,41 +422,13 @@
 
     <footer>
 	<div class="inner">
-		<ul>
-									
-				<li class="v_middle"><a href="grid/overview.html" target="_parent">OVERVIEW</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="grid/portrait.html" target="_parent">PORTRAIT</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="grid/sport.html" target="_parent">SPORT</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="grid/music.html" target="_parent">MUSIC</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="p/projects.html" target="_parent">PROJECTS</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="motion.html" target="_parent">MOTION</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="lightbox.html" target="_parent">LIGHTBOX</a></li>
-				
-					
-						
-				<li class="v_middle"><a href="info.html" target="_parent">INFO</a></li>
-				
-			
-		</ul>
-		<p>&copy; 2016 Eric Ryan Anderson.<br class="mobileOnly" />Site Powered by <a href="http://eastofwestern.com/" target="_blank">East of Western</a></p>
+        <div class="cont_">
+            <p>Ishi Digital</p>
+            <p>Tel: +254 777 777</p>
+            <p>Email: +254 777 777</p>
+        </div>
+		
+		<p class="copy_">&copy; 2016 Ishi Digital</p>
 	</div>
 </footer>
 
@@ -329,13 +453,12 @@
     <!----------------------------------------->
     <!--Vegas-->
     <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.js"></script>
-<!--    <script type="text/javascript"  src="js/vegas-scripts.js"></script>-->
     <script>
         $("#intro").vegas({
             slides: [
-            { src: "images/img/photo2.jpg" },
+                { src: "images/img/photo2.jpg" },
                 ],
-                overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
+            overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
             });
     </script>
     
@@ -380,6 +503,12 @@
         });
     </script>
 
+    <script>$('.grid').masonry({
+          // options
+          itemSelector: '.grid-item'
+          //columnWidth: 200
+        });
+        </script>
     
 <!--------------------------------------------------------------->
 <!--------------------------------------------------------------->
