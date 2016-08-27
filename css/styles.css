@@ -15,12 +15,11 @@ html {
 body {
     height: auto !important;
     width: 100%;
-    font-family: "proxima-nova", sans-serif;
+/*    font-family: "proxima-nova", sans-serif;*/
     font-size: 12px;
     font-weight: 300;
     background-color: #fff;
-    
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif !important;
 }
 
 .wf-loading p, .wf-loading h1, .wf-loading h2, .wf-loading a {
@@ -181,48 +180,82 @@ a.bigLink {
         min-height: 600px;
     }
 
+        .container {
+            width: 80%;
+            max-width: 800px;
+        }
 
         /*ABOUT*/
         .homeHeader .tabs-content #about{
-            width: 80%;
-            max-width: 1000px;
+            width: 100%;
             height: calc(100vh - 150px);
             min-height: 600px;
             text-align: center;
         }
-        
 
         #about .ab_ {
             height: 40%;
         }
 
+        #about .ab_>* {}
+
+        #about .spc_ {
+            height: 50px;
+}
         #about .why_ {
-            height: 30%;
+            height: auto;
+            padding: 20px;
         }
         
+        #about h2 {
+        /*  margin: 0px 0px 40px 0px;*/
+          padding 10px;
+          line-height: 160%;
+          font-size: 1.625em;
+          font-weight: 700;
+          text-transform: uppercase;
+
+        }
+
         #about .ttl {
             text-decoration: underline;
 }
 
+        /*HOW IT WORKS*/
+        .homeHeader .tabs-content #how{
+            width: 100%;
+            height: calc(100vh - 150px);
+            min-height: 600px;
+            text-align: center;
+        }
+
+        #how .container {
+            width: 90%;
+        }
 
         /*GALLERY*/
         .homeHeader .tabs-content #gallery{
             min-height: calc(100vh -180px) !important;
             height: auto;
-/*            padding: 10px 100px;*/
+            width: 100%;
         }
         
-        #gallery.container {
+        #gallery .container {
             width: 90%;
-/*            max-width: 1000px;*/
             height: 100%;
             text-align: center;
         }
 
-        #gallery.container .grid {
+        #gallery .container .grid {
             height: auto !important;
         }
 
+        /*INFO*/
+        .homeHeader .tabs-content #info {
+            height: calc(100vh - 150px);
+            min-height: 600px;
+            text-align: center;
+}
 
 
 /* ===\\================//=== *
