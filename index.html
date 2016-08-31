@@ -30,7 +30,7 @@
 
     <!--- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
+    <script src="js/masonry/modernizr-2.5.3.min.js"></script>
     <style>
         html,
         body,
@@ -155,7 +155,7 @@
               </nav>
             </div>
               <!-- scroll down button -->
-            <div class="expanded row columns scrollDown_ f-center">
+            <a class="expanded row columns scrollDown_ f-center" href="#">
               <div class="scrollCue f-center"
                 data-anchor-target=".intro"
                 data-100="opacity: 1;"
@@ -163,7 +163,7 @@
               >
                     <span></span>
               </div>
-            </div>
+            </a>
             
         </div>
     
@@ -175,7 +175,7 @@
           <div class="homeHeader expanded row columns"
                data-anchor-target=".homeGrid"
                 data-start="position: absolute; opacity: 0"
-                data-top-top="background-color: rgba(255,255,255,.98); opacity: 1;"
+                data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
                 data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
         
                 <!--desktopOnly-->
@@ -201,8 +201,7 @@
               
                 <nav class="menu">
                     <ul id="header" data-tabs
-                        class="black_ tabs f-center expanded row columns"
-                        >
+                        class="black_ tabs f-center expanded row columns">
                           <li class="tabs-title is-active">
                               <a href="#about" aria-selected="true">ISHI</a>
                           </li>
@@ -218,14 +217,19 @@
                           <li class="tabs-title">
                               <a href="#info">INFO</a>
                           </li>
+
+                            <li class="tabs-title">
+                              <a href="#instagram">INSTAGRAM</a>
+                          </li>
                     </ul> <!-- header end -->
                     
                     <!--- content -->
-                    <div class="tabs-content expanded row columns" data-tabs-content="header">
+                    <div class="tabs-content expanded row columns"
+                         data-tabs-content="header">
                         <!------------------------------------------->
                         <!--- ABOUT ---->
-                          <div class="tabs-panel is-active f-center" id="about">
-                            <div class="container ">
+                          <div class="tabs-panel is-active " id="about">
+                            <div class="container f-center">
 
                                 <!-- top -->
                                 <div class="top">
@@ -299,8 +303,8 @@
 
                         <!------------------------------------------->
                         <!--- GALLERY ---->
-                        <div class="tabs-panel container f-center" id="gallery">
-                            <div class="container">
+                        <div class="tabs-panel " id="gallery">
+                            <div class="container f-center">
 
                                 <!-- toolbar -->
                                 <div class="toolbar addb4 desktopOnly"
@@ -326,7 +330,21 @@
                                 </div>
                                 <!-- /toolbar -->
 
+                                <!-- Masonry 1 -->
                                 <ul class="grid effect-1 row columns " id="grid">
+                                    <li class="grid-item">
+                                        <div class="pic-overlay"></div>
+                                        <img src="images/grid1.jpg">
+                                    </li>
+
+                                    <li class="grid-item">
+                                        <div class="pic-overlay"></div>
+                                        <img class="photo" src="images/grid1.jpg">
+                                    </li>
+                                </ul>
+
+                                <!-- Masonry 2 -->
+<!--                                <ul class="grid effect-1 row columns " id="grid">
                                     <div class="grid-sizer"></div>
                                     <div class="gutter-sizer"></div>
 
@@ -338,8 +356,8 @@
                                             </p>
 
                                             <a href="#">
-                                               <img class="photo"          src="ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png"
-                                                rel="ericryananderson.imgix.net/588_ericryananderson_music_098.jpg">
+                                               <img class="photo"          src="images/grid1.jpg"
+                                                >
                                             </a>
                                         </li>
 
@@ -351,38 +369,11 @@
                                             </p>
 
                                               <a href="#">
-                                                <img class="photo" src="ericryananderson.imgix.net/siteGray/569_ericryananderson_ugobk_046.png" rel="ericryananderson.imgix.net/569_ericryananderson_ugobk_046.jpg">
+                                                <img class="photo" src="images/grid2.jpg" >
                                               </a>
-                                        </li>
+                                    </li>
 
-
-
-                                        <li class="grid-item  ">
-                                            <p class="lbox desktopOnly" data-id="9250">
-                                                <span class="shape"></span>
-                                                <span class="v_middle text">ADD TO LIGHTBOX</span>
-                                            </p>
-
-                                              <a href="#">
-                                                <img class="photo" src="ericryananderson.imgix.net/siteGray/569_anderson_gretagerwig_11x14w.png" rel="ericryananderson.imgix.net/569_anderson_gretagerwig_11x14w.jpg">
-                                              </a>
-                                        </li>
-
-
-
-                                        <li class="grid-item  ">
-
-                                            <p class="lbox desktopOnly" data-id="9253">
-                                                <span class="shape"></span>
-                                                <span class="v_middle text">ADD TO LIGHTBOX</span>
-                                            </p>
-
-                                          <a href="#">
-                                            <img class="photo" src="ericryananderson.imgix.net/siteGray/569_era_gretagerwig_4939.png" rel="ericryananderson.imgix.net/569_era_gretagerwig_4939.jpg">
-                                          </a>
-                                        </li>
-
-                                    </ul>
+                                </ul>-->
                             </div>
                         </div>
 
@@ -391,6 +382,20 @@
                         <div class="tabs-panel  " id="info">
                             <div class="container f-vert">
                                 <h2>talk to us</h2>
+
+                                  <h5>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim.
+                                      <br>Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                                  <br>
+                                </h5>
+                            </div>
+                        </div> <!--- info end -->
+                        <!------------------------------------------->
+
+                        <!------------------------------------------->
+                        <!--- INSTAGRAM ---->
+                        <div class="tabs-panel  " id="instagram">
+                            <div class="container f-vert">
+                                <h2>instagram feed</h2>
 
                                   <h5>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim.
                                       <br>Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
@@ -428,6 +433,16 @@
     <script>
         $(document).foundation(); 
     </script>
+
+    <!-- masonry -->
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="js/masonry/jquery-1.7.1.min.js"><\/script>')</script>
+
+    <script src="js/masonry/jquery.masonry.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+<!--
     <script src="js/modernizr.custom.24171.js"></script>
     <script src="js/imgix.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
@@ -438,15 +453,9 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.cycle2.min.js"></script>
     <script src="js/site.js" ></script>
-    
-    <!----------------------------------------->
-    <!--two up-->
-<!--
-    <script src="two-up/scripts/imagesloaded.pkgd.min.js"></script>
-    <script src="two-up/scripts/hammer.min.js"></script>
-    <script src="two-up/scripts/sequence.min.js"></script>
-    <script src="two-up/scripts/sequence-theme.two-up.js"></script>
 -->
+
+
     <!----------------------------------------->
     <!--Vegas-->
     <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.js"></script>
@@ -463,6 +472,7 @@
             });
     </script>
     
+<!--
     <script>
         var bgOptions = {
           fluidClass: 'imgix-fluid-bg',
@@ -503,13 +513,8 @@
           imgix.fluid(imgOptions);
         });
     </script>
+-->
 
-    <script>$('.grid').masonry({
-          // options
-          itemSelector: '.grid-item'
-          //columnWidth: 200
-        });
-        </script>
     
 <!--------------------------------------------------------------->
 <!--------------------------------------------------------------->

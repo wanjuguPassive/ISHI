@@ -191,12 +191,12 @@ a.bigLink {
         #about .container {
             width: 80%;
             max-width: 800px;
-            height: auto !important;
+            height: 100% !important;
             margin-top: 100px;
         }
 
         #about .top {
-            height: 100%;
+            height: auto;
         }
 
         #about .ab_ {
@@ -436,7 +436,7 @@ header {
 
     main {
         position: relative;
-        min-height: 150vh;
+        min-height: 100vh;
         height: auto;
 /*        margin-bottom: -180px;*/
     }
@@ -444,7 +444,7 @@ header {
         main:after {
             content: '';
             display: block;
-            height: 180px;
+/*            height: 180px;*/
         }
 
 
@@ -907,6 +907,8 @@ body.masonry {}
         }
 
         .no-touch .masonry .grid-item .overlay:hover,
+
+
         .no-touch .masonry .grid-item p.lbox:hover + a .overlay {
           opacity: 1;
         }
