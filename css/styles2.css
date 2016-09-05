@@ -102,15 +102,16 @@ body {
         #header .head_ .tabs_ a {
             margin: 0 auto;
             padding: 10px 25px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             line-height: 1.2;
-            letter-spacing: -.1rem;
+/*            letter-spacing: -.1rem;*/
             font-weight: 500;
             color: #0e0e0e;
         }
 
         #header .head_ .tabs_ a.select_ {
-            background: #e6e6e6;
+            border: solid .5px #0e0e0e;
+            background: #fff;
             color: #0e0e0e;
         }
 
@@ -184,6 +185,68 @@ body {
 
     }
 
+/* ===\\================//=== *
+ * ====\\=== CONTACT ===//==== *
+ * =====\\============//===== */
+#contact {}
+
+    #contact #banner_ {
+        height: 250px;
+        width: 100%;
+/*        background-image: url(/images/img/contact2.jpg);*/
+}
+
+    #contact #about {
+        width: 80%;
+        min-width: 700px;
+        height: calc(100vh - 430px);
+    }
+
+        #about .container {
+            width: 80%;
+            max-width: 600px;
+            height: 100%;
+            min-height: 390px;
+/*            margin: 20px;*/
+        }
+
+        #about .container .why_ {
+            height: auto;
+
+            margin-top: 20px;
+        }
+
+        #about .container h2 {
+        /*  margin: 0px 0px 40px 0px;*/
+          padding 10px;
+          line-height: 160%;
+          font-size: 1.625em;
+          font-weight: 700;
+          text-transform: uppercase;
+
+        }
+
+        #about .container .btn_ {
+            height: 100px;
+            width: 100%;
+        }
+            .btn_ .button {
+                padding: 15px 40px;
+                font-weight: 500;
+                font-size: .9rem;
+                text-transform: uppercase;
+
+                background-color: #0e0e0e;
+                color: #fff;
+/*                border: .5px solid #fff;                */
+            }
+
+            .btn_ .button:hover {
+                border: .5px solid #0e0e0e;
+                background-color: #fff;
+                color: #0e0e0e;
+
+            }
 
 
 
