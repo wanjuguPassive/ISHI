@@ -22,10 +22,12 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
 <!--    <link rel="stylesheet" href="two-up/css/sequence-theme.two-up.css"  media="all">-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all and (min-width: 769px)" />
+<!--    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all and (min-width: 769px)" />-->
+
     <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" media="all and (max-width: 768px)" />
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="css/styles2.css" media="all" />
 
 
     <!--- Scripts -->
@@ -61,7 +63,7 @@
 
         .row, .columns, .column {
             margin: 0 auto !important;
-          padding: 0 !important;
+            padding: 0 !important;
         }
 
         h1, h2, h3, h4, h5 {
@@ -69,10 +71,6 @@
             font-family: 'Dosis', sans-serif !important;
         }
 
-        main {
-            height: auto;
-            position: relative;
-        }
         footer {
             position: relative;
         }
@@ -85,334 +83,145 @@
 
 <div id="whole">
 
-    <div class="homeLoad"></div>
+    <!------------------------------------------->
+    <!--- CONTENT -->
+    <div id="p_one" class="expanded row columns">
 
+        <!-- =================================== -->
+        <!--- HEADER --->
+        <!-- =================================== -->
+        <div class="expanded row columns homeHeader">
 
-    <!-- logo -->
-<!--
-    <img class="logo logo_" src="images/logo.jpg" alt="Ishi Digital"
-      data-anchor-target=".intro"
-    />
--->
-
-    <!-- main content -->
-    <main class="expanded row columns">
-
-        <!------------------------------------------------------------->
-        <!-- PAGE 1 -->
-        <!------------------------------------------------------------->
-
-        <!----------------- CONTENT------------------------->
-
-        <div id="intro" class="orbit intro f-vert"
-             role="region"
-             aria-label="Ishi Doctrine"
-             data-orbit>
-
-
-            <div class="overlay_"></div>
-            <div class="slide_ f-vert" >
-
-                <!--desktopOnly-->
-                <div class="logoHolder desktopOnly row columns">
-                    <div class="logo f-center">
-                        <p class="logoTitle white_ ">ISHI DIGITAL</p>
-                    </div>
+            <!--LOGO - desktopOnly-->
+            <div class="logoHolder desktopOnly row columns">
+                <div class="logo f-center">
+                    <p class="logoTitle black_ ">ISHI DIGITAL</p>
                 </div>
-              <ul class="orbit-container ">
-<!--
-                    <button class="orbit-previous">
-                        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
-                    </button>
-
-                    <button class="orbit-next">
-                        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
-                    </button>
--->
-
-                    <li class="is-active orbit-slide ">
-                      <div class="logo_text white_ f-center">
-                        <a href="#" class="" > CREATIVE VISUAL LIBRARY FOR DIGITAL CAMPAIGNS </a>
-                    </div>
-                    </li>
-
-                    <li class="orbit-slide f-center">
-                      <div class="logo_text  white_ f-center">
-                        <a href="#" class="" > SOCIAL AND DIGITAL CURATOR </a>
-                    </div>
-                    </li>
-
-              </ul>
-
-              <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0">
-                    <span class="show-for-sr">First slide details.</span>
-                    <span class="show-for-sr">Current Slide</span>
-                </button>
-                <button data-slide="1">
-                    <span class="show-for-sr">Second slide details.</span>
-                </button>
-              </nav>
             </div>
-              <!-- scroll down button -->
-            <a class="expanded row columns scrollDown_ f-center" href="#">
-              <div class="scrollCue f-center"
-                data-anchor-target=".intro"
-                data-100="opacity: 1;"
-                data-250="opacity: 1;"
-              >
-                    <span></span>
-              </div>
-            </a>
 
-        </div>
+            <div id="header" class="black_ f-center expanded row columns">
+                <div class="head_ f-center">
+                  <div class="tabs_">
+                      <a href="index.html" >ISHI</a>
+                  </div>
 
-      <!------------------------------------------------------------->
-      <!-- PAGE 2 -->
-      <section id="page2" class="homeGrid expanded row columns">
+                  <div class="tabs_">
+                      <a href="#how" >HOW IT WORKS</a>
+                  </div>
 
-          <!----------------- HEADER------------------------->
-          <div class="homeHeader expanded row columns"
-               data-anchor-target=".homeGrid"
-                data-start="position: absolute; opacity: 0"
-                data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
-                data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
+                  <div class="tabs_ ">
+                      <a class="select_" href="gallery.html">GALLERY</a>
+                  </div>
 
-                <!--desktopOnly-->
-                <div class="logoHolder desktopOnly row columns">
-                    <div class="logo f-center">
-                        <p class="logoTitle black_ ">ISHI DIGITAL</p>
-                    </div>
+                  <div class="tabs_">
+                      <a href="#info">INFO</a>
+                  </div>
+
+                  <div class="tabs_">
+                      <a href="#instagram">INSTAGRAM</a>
+                  </div>
                 </div>
+            </div> <!-- header end -->
 
-                <!--trigger/mobileOnly-->
-                <div class="trigger inline">
-                    <a class="logo v_middle" href="#">
-                        <p class="logoTitle mobileOnly logo white_">ISHI DIGITAL</p>
-                    </a>
-
-                    <div class="menuBtn mobileOnly">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                    </div>
-                </div>
-                <!--/trigger-->
-
-                <nav class="menu">
-                    <ul id="header" data-tabs
-                        class="black_ tabs f-center expanded row columns">
-                          <li class="tabs-title is-active">
-                              <a href="#about" aria-selected="true">ISHI</a>
-                          </li>
-
-                          <li class="tabs-title">
-                              <a href="#how" >HOW IT WORKS</a>
-                          </li>
-
-                          <li class="tabs-title ">
-                              <a href="#gallery">GALLERY</a>
-                          </li>
-
-                          <li class="tabs-title">
-                              <a href="#info">INFO</a>
-                          </li>
-
-                            <li class="tabs-title">
-                              <a href="#instagram">INSTAGRAM</a>
-                          </li>
-                    </ul> <!-- header end -->
-
-                    <!--- content -->
-                    <div class="tabs-content expanded row columns"
-                         data-tabs-content="header">
-                        <!------------------------------------------->
-                        <!--- ABOUT ---->
-                          <div class="tabs-panel is-active " id="about">
-                            <div class="container f-center">
-
-                                <!-- top -->
-                                <div class="top">
-                                  <div class="ab_ f-vert">
-                                      <h2>about</h2>
-                                          <p class="ttl">As a Visual Library: </p>
-                                          <h5>Creative, themed & finely-curated Photography for your Digital artworks,
-                                              <br>Social Media campaigns, Visual Projects, Exhibitions & Digital Platforms</h5>
-                                          <br>
-                                          <br>
-                                          <p class="ttl">As a Social/Digital Curator: </p>
-                                          <h5>Equipping Creatives and Creative platforms in the Business w/ Digital strategy, Content Creation & Moderation, Social Reports & Audits, plus Digital Training.</h5>
-                                  </div>
-
-                                  <div class="spc_"></div>
-
-                                  <div class="why_ f-vert">
-                                      <h2>why 'Ishi'</h2>
-
-                                        <h5>‘Ishi’ is a Swahili word meaning ‘Live’. Live where your heart is. Live where your Art is.
-                                            <br>We hope to inspire others to live doing what they truly love and are passionate about (where your heart is) as well as what they are gifted in (where your Art is).
-                                            <br>
-                                            <br>
-                                        As for us, the Visual-Digital Narrative did it. Here’s to those who love to create, and to do so boldly. For those who dare to live through their Art.</h5>
-                                  </div>
-                                </div> <!-- top end  -->
-
-                                <!-- bottom -->
+        </div><!-- homeHeader end -->
 
 
-                            </div><!-- container end -->
-                          </div>
 
-                        <!------------------------------------------->
-                        <!--- HOW IT WORKS ---->
-                        <div class="tabs-panel " id="how">
-                            <div class="container f-center">
-                                <div class="bottom">
-                                    <h2>HOW IT WORKS</h2>
-                                        <div class="f-center">
-                                        <div class="small-12 medium-6 large-4 columns">
-                                            <p class="ttl">VISUAL LIBRARY</p>
-                                            <div>
-                                                <h5>Buy short/long-term Photo License
-                                                  <br>
-                                              Order customized bank of HD images
-                                                </h5>
-                                            </div>
-                                        </div>
+        <!-- =================================== -->
+        <!--- GALLERY --->
+        <!-- =================================== -->
+        <div id="gallery" class="expanded row columns">
 
-                                        <div class="small-12 medium-6 large-4 columns">
-                                            <p class="ttl">SOCIAL/ DIGITAL</p>
-                                            <div>
-                                                <h5>Contact us for Social Strategy, Audits, <br> Reports, Content development &
-                                                  <br>
-                                                  platforms management
-                                                </h5>
-                                            </div>
-                                        </div>
+            <div class="container f-center">
 
-                                        <div class="small-12 medium-6 large-4 end columns">
-                                            <p class="ttl">GET IT PRINTED</p>
-                                            <div>
-                                                <h5>Buy our Photography in large canvas prints <br>ranging from 24*16 inch to 60*30 </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- bottom end  -->
+                <!-- toolbar -->
+                <div class="toolbar addb4 desktopOnly"
+                    data-anchor-target=".homeHeader"
+                    data-25-top="opacity: 0;"
+                    data-top="opacity: 1;">
+
+                        <div class="right addb4 desktopOnly">
+                            <div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
+                                <img src="images/icon-slideshow.png" />
                             </div>
-                        </div> <!--- how end -->
-
-                        <!------------------------------------------->
-                        <!--- GALLERY ---->
-                        <div class="tabs-panel " id="gallery">
-                            <div class="container f-center">
-
-                                <!-- toolbar -->
-                                <div class="toolbar addb4 desktopOnly"
-                                    data-anchor-target=".homeHeader"
-                                    data-25-top="opacity: 0;"
-                                    data-top="opacity: 1;">
-
-                                        <div class="right addb4 desktopOnly">
-                                            <div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
-                                                <img src="images/icon-slideshow.png" />
-                                            </div>
-                                            <div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
-                                                <span></span><span></span><span></span>
-                                                <span></span><span></span><span></span>
-                                                <span></span><span></span><span></span>
-                                            </div>
-                                            <div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-
-                                </div>
-                                <!-- /toolbar -->
-
-                                <!-- Masonry 1 -->
-                                <ul class="grid effect-1 row columns " id="grid">
-                                    <li class="grid-item">
-                                        <div class="pic-overlay"></div>
-                                        <img src="images/grid1.jpg">
-                                    </li>
-
-                                    <li class="grid-item">
-                                        <div class="pic-overlay"></div>
-                                        <img class="photo" src="images/grid1.jpg">
-                                    </li>
-                                </ul>
-
-                                <!-- Masonry 2 -->
-<!--                                <ul class="grid effect-1 row columns " id="grid">
-                                    <div class="grid-sizer"></div>
-                                    <div class="gutter-sizer"></div>
-
-                                        <li class="grid-item">
-
-                                            <p class="lbox desktopOnly" data-id="9246">
-                                                <span class="shape"></span>
-                                                <span class="v_middle text">ADD TO LIGHTBOX</span>
-                                            </p>
-
-                                            <a href="#">
-                                               <img class="photo"          src="images/grid1.jpg"
-                                                >
-                                            </a>
-                                        </li>
-
-                                        <li class="grid-item  ">
-
-                                            <p class="lbox desktopOnly" data-id="9246">
-                                                <span class="shape"></span>
-                                                <span class="v_middle text">ADD TO LIGHTBOX</span>
-                                            </p>
-
-                                              <a href="#">
-                                                <img class="photo" src="images/grid2.jpg" >
-                                              </a>
-                                    </li>
-
-                                </ul>-->
+                            <div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
+                                <span></span><span></span><span></span>
+                                <span></span><span></span><span></span>
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
 
-                        <!------------------------------------------->
-                        <!--- INFO ---->
-                        <div class="tabs-panel  " id="info">
-                            <div class="container f-vert">
-                                <h2>talk to us</h2>
+                </div>
+                <!-- /toolbar -->
 
-                                  <h5>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim.
-                                      <br>Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-                                  <br>
-                                </h5>
-                            </div>
-                        </div> <!--- info end -->
-                        <!------------------------------------------->
+                <!-- Masonry 1 -->
+                <ul class="row columns " id="content">
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/001.jpg">
+                    </li>
 
-                        <!------------------------------------------->
-                        <!--- INSTAGRAM ---->
-                        <div class="tabs-panel  " id="instagram">
-                            <div class="container f-vert">
-                                <h2>instagram feed</h2>
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/002.jpg">
+                    </li>
 
-                                  <h5>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim.
-                                      <br>Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-                                  <br>
-                                </h5>
-                            </div>
-                        </div> <!--- info end -->
-                        <!------------------------------------------->
-                    </div> <!--- tabs-content end -->
-                </nav>
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/003.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/004.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/005.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/006.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/007.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/008.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/009.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/010.jpg">
+                    </li>
+
+                </ul>
+            </div>
+
+
+
         </div>
 
-  </section>
 
-    </main>
-        <!-- main content -->
+    </div>
 
+    <!------------------------------------------->
+    <!--- FOOTER -->
     <footer>
         <div class="inner">
             <div class="cont_ f-vert">
@@ -427,6 +236,8 @@
     </footer>
 
 </div> <!-- whole end -->
+
+
     <!----------------------------------------------------------->
     <!-- SCRIPTS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
@@ -440,21 +251,6 @@
 
     <script src="js/masonry/jquery.masonry.min.js"></script>
     <script src="js/app.js"></script>
-
-
-<!--
-    <script src="js/modernizr.custom.24171.js"></script>
-    <script src="js/imgix.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.js" ></script>
-    <script src="js/AnimOnScroll.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.cycle2.min.js"></script>
-    <script src="js/site.js" ></script>
--->
-
 
     <!----------------------------------------->
     <!--Vegas-->
@@ -472,48 +268,7 @@
             });
     </script>
 
-<!--
-    <script>
-        var bgOptions = {
-          fluidClass: 'imgix-fluid-bg',
-          updateOnResizeDown: true,
-          updateOnPinchZoom: true,
-          pixelStep: 10,
-          autoInsertCSSBestPractices: true,
-          onChangeParamOverride: function(w, h) {
-             /* Override and insert additional imgix parameters*/
-             /* Currently displaying information about the image size and dpr */
-            /*
-            var dpr = Math.ceil(window.devicePixelRatio*10) /10;
-            return {
-              "txt": "w:" + w + " h:" +h + " dpr:" + dpr,
-              "txtalign": "center,bottom",
-              "txtsize": 20,
-              "txtfont": "Helvetica%20Neue,bold",
-              "txtclr": "ffffffff",
-              "txtpad": 20,
-              "txtfit": 'max',
-              "exp": -2
-            };
-            */
-          }
-        };
 
-
-        var imgOptions = {
-          fluidClass: 'imgix-fluid',
-          updateOnResizeDown: true,
-          updateOnPinchZoom: true,
-          pixelStep: 10,
-          autoInsertCSSBestPractices: true
-        }
-
-        imgix.onready(function() {
-          imgix.fluid(bgOptions);
-          imgix.fluid(imgOptions);
-        });
-    </script>
--->
 
 
 <!--------------------------------------------------------------->

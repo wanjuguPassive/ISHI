@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    -webkit-backface-visibility: hidden;
+}
+
+html {
+    height: auto;
+    width: 100%;
+    color: #0e0e0e;
+}
+
+body {
+    height: auto !important;
+    width: 100%;
+/*    font-family: "proxima-nova", sans-serif;*/
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #fff;
+    font-family: 'Dosis', sans-serif !important;
+}
+
+.wf-loading p, .wf-loading h1, .wf-loading h2, .wf-loading a {
+	opacity: 0;
+}
+
+.wf-active p, .wf-active h1, .wf-active h2, .wf-active a {
+	opacity: 1;
+}
+
+.mobileOnly {
+    display: none !important;
+}
+
+.white_ {
+    color: #fff !important;
+}
+
+.black_ {
+    color: #0e0e0e !important;
+}
+
+#whole, #p_one {
+    height: auto;
+    min-height: 100vh;
+
+}
+
+#p_one {
+
+}
+
+/* ===\\================//=== *
+ * ====\\=== HEADER ===//==== *
+ * =====\\============//===== */
+.homeHeader {
+        z-index: 999;
+        height: 180px;
+
+    }
+
+    .homeHeader .logoTitle {
+        font-size: 2rem !important;
+        font-weight: 500;
+        position: relative;
+        text-align: center;
+        line-height: 1.2;
+        margin: 20px 0px !important;
+        width: 430px;
+    }
+
+          .logoTitle.white_ {
+            color: #fff;
+            border: #fff solid 3px;
+            font-size: 3rem !important;
+            font-weight: 400;
+            width: 530px !important;
+            margin: 20px 0px 10px 0px !important;
+            }
+
+        .logoTitle.black_ {
+            color: #0e0e0e;
+            border: #0e0e0e solid 2px;
+          }
+
+    .homeHeader #header {
+        height: 60px;
+        width: auto;
+    }
+
+        .homeHeader #header .head_{
+            height: 60px;
+/*            width: 190px;*/
+        }
+
+        #header .head_ .tabs_ {
+        position: relative;
+
+        }
+
+        #header .head_ .tabs_ a {
+            margin: 0 auto;
+            padding: 10px 25px;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            letter-spacing: -.1rem;
+            font-weight: 500;
+            color: #0e0e0e;
+        }
+
+        #header .head_ .tabs_ a.select_ {
+            background: #e6e6e6;
+            color: #0e0e0e;
+        }
+
+
+
+
+/* ===\\================//=== *
+ * ====\\=== GALLERY ===//==== *
+ * =====\\============//===== */
+#gallery {
+    min-height: calc(100vh - 180px)
+}
+
+/*TOOLBAR*/
+.toolbar {
+    position: fixed;
+    right: 10px;
+    top: 50px;
+}
+/*MASONRY*/
+#content {
+	/*width: 980px;*/
+	/*width: 95%;*/
+	width: auto;
+	margin: 0 auto;
+}
+
+.item {
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 0 20px 20px 0;
+	-webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+
+    .item img {
+        width: 300px;
+        height: auto;
+    }
+
+    .item .pic-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+
+    }
+
+
+
+
+/* ===\\================//=== *
+ * ====\\=== FOOTER ===//==== *
+ * =====\\============//===== */
+
+footer {
+  background-color: #000;
+  color: #fff;
+    z-index: 999;
+    bottom: 0;
+}
+
+  footer .inner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+  }
+
+    footer p {
+      color: #fff;
+    }
+
+      .no-touch footer p a:hover {
+        color: #cbcbcb;
+      }
+
+    footer ul {
+      position: absolute;
+      top: 35px;
+      left: 2%;
+      list-style-type: none;
+      text-align: left;
+    }
+
+      footer ul li {
+        margin-right: 16px !important;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: .05em;
+      }
+
+    footer p {
+/*
+      position: absolute;
+      top: 35px;
+      right: 2%;
+*/
+      font-weight: 500;
+      letter-spacing: .05em;
+      font-size: .8rem;
+      color: #969696;
+    }
+
+      footer a {
+        color: #fff;
+      }
+
+    footer .cont_ {
+        width: 100%;
+        height: 100%;
+    }
+    footer .cont_ .ttl_ {
+        font-weight: bold;
+        font-size: .9rem;
+
+    }
+
+    footer .cont_ .copy_ {
+        margin-top: 20px;
+
+    }
