@@ -20,7 +20,7 @@
  * Copyright © 2015 Ian Lunn Design Limited unless otherwise stated.
  */
 
-@import url("http://fonts.googleapis.com/css?family=Oswald:400,700|Merriweather:300");
+/*@import url("http://fonts.googleapis.com/css?family=Oswald:400,700|Merriweather:300");*/
 
 body {
   overflow-x: hidden;
@@ -29,8 +29,8 @@ body {
 .seq {
   /* Dimensions */
   width: 100%;
-/*  max-width: 100%;*/
-/*  height: 100%;*/
+  max-width: 100%;
+  height: 100% ;
   /* Hide anything that goes beyond the boundaries of the Sequence container */
   overflow: hidden;
   /* Center the Sequence container on the page */
