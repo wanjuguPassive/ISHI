@@ -412,22 +412,22 @@ body.home {}
 
     #contact #about {
         width: 80%;
-        min-width: 700px;
-        height: calc(100vh - 430px);
+        min-width: 500px;
+        max-width: 700px;
+        min-height: calc(100vh - 200px);
     }
 
         #about .container {
             width: 80%;
             max-width: 600px;
-            height: 100%;
-            min-height: 390px;
+            height: auto;
+            min-height: 500px;
 /*            margin: 20px;*/
         }
 
         #about .container .why_ {
             height: auto;
-
-            margin-top: 20px;
+            margin: 20px 0px 40px 0px !important;
         }
 
         #about .container h2 {
@@ -440,10 +440,24 @@ body.home {}
 
         }
 
-        #about .container .btn_ {
-            height: 100px;
-            width: 100%;
+
+
+        #about .container .talk_ {
+            height: 250px;
+            margin-top: 20px !important;
+            width: 80%;
+            border: #555 solid .2px;
         }
+
+            .talk_ .inner {
+                color: #0e0e0e;
+                height: auto !important;
+            }
+
+            .talk_ .inner .btn_ {
+            margin: 10px 0px;
+            width: 100%;
+            }
 
 
 /* Modal*/
