@@ -512,7 +512,7 @@ body {
   .seq .seq-canvas > * {
     /* Make Sequence full screen in large layout */
     position: absolute;
-    height: 100%;
+    height: calc(100vh - 150px)!important;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -542,6 +542,10 @@ body {
     -ms-transform: translateY(-50%) translateZ(100px);
     transform: translateY(-50%) translateZ(100px);
   }
+
+    .seq .seq-nav.ind2 {
+        top: 80%;
+    }
 
   .seq .seq-pagination li {
     display: block;
