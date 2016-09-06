@@ -68,7 +68,7 @@
         }
 
         h1, h2, h3, h4, h5 {
-            font-weight: 500;
+            font-weight: 400;
             font-family: 'Dosis', sans-serif !important;
         }
 
@@ -81,6 +81,90 @@
 <!-- ========================================================= -->
 <body>
 
+<!-- ================================ -->
+<!--- MODALS ----->
+    <div class="reveal f-center" id="contactFormModal" data-reveal>
+
+        <div class="row columns contain_ f-vert">
+            <!-- logo -->
+            <div class="logoHolder desktopOnly row columns">
+                <div class="logo f-center">
+                    <p class="logoTitle black_">ISHI DIGITAL</p>
+                </div>
+            </div>
+
+            <!-- form -->
+            <form>
+                <!--title-->
+                <div class="row columns form-ttl f-center">
+                    <p class="">Fill in the form below and we'll get back to you as soon as possible...</p>
+                </div>
+
+                <!--content-->
+                <div class="row columns form-cntnt">
+
+                    <!-- names -->
+                    <div class="row">
+                        <div class="small-5 columns">
+                            <label><input type="text" placeholder="First Name" name="firstname">
+                            </label>
+                        </div>
+                        <div class="small-2 columns"></div>
+                        <div class="small-5 columns ">
+                            <label><input type="text" placeholder="Last Name" name="lastname">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- email -->
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="email" placeholder="Email Address" name="email">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="row">
+                        <div class="small-10 columns">
+                            <label><input type="text" placeholder="Subject" name="subject">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="textarea" placeholder="Your Message" name="message">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="row f-center">
+
+                        <div class="small-5 columns">
+                            <label class="btn_">
+                                <input type="submit" class="button" value="Submit">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+
+<!-- ================================ -->
 <div id="whole">
 
     <!------------------------------------------->
@@ -104,7 +188,7 @@
                 <div class="head_ f-center">
 
                   <div class="tabs_">
-                      <a href="services.html">SERVICES</a>
+                      <a href="index.html#p_one">SERVICES</a>
                   </div>
 
                   <div class="tabs_ ">
@@ -112,7 +196,7 @@
                   </div>
 
                   <div class="tabs_">
-                      <a href="#instagram">INSTAGRAM</a>
+                      <a href="instagram.html">INSTAGRAM</a>
                   </div>
 
                   <div class="tabs_">
@@ -136,7 +220,7 @@
 
                 <div class="container f-vert">
                     <div class="why_ f-vert">
-                      <h2>why 'Ishi'</h2>
+                      <h2>Ishi</h2>
 
                         <h5>‘Ishi’ is a Swahili word meaning ‘Live’. Live where your heart is. Live where your Art is.
                             <br>We hope to inspire others to live doing what they truly love and are passionate about (where your heart is) as well as what they are gifted in (where your Art is).
@@ -145,9 +229,9 @@
                         As for us, the Visual-Digital Narrative did it. Here’s to those who love to create, and to do so boldly. For those who dare to live through their Art.</h5>
                     </div>
 
-                    <div class="btn_ f-center">
-                        <a class="button"> talk to us </a>
-                    </div>
+                    <p class="btn_ f-center">
+                        <a class="button" data-open="contactFormModal"> talk to us </a>
+                    </p>
                 </div>
             </div>
         </div><!--services end -->
@@ -173,11 +257,13 @@
 </div><!-- whole end --->
 
 <!-- ========================================================= -->
-<!-- Scripts -->
-    <script src="js/twoup/imagesloaded.pkgd.min.js"></script>
-    <!--  <script src="js/twoup/hammer.min.js"></script>-->
-    <script src="js/twoup/sequence.min.js"></script>
-    <script src="js/twoup/sequence-theme.two-up.min.js"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+    <script src="js/app.js"></script>
 
     <!----------------------------------------->
     <!--Vegas-->
