@@ -5,11 +5,10 @@ html,
 body,
 div,
 h1,
-p,
-a,
+
 video {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 html, body {
@@ -21,27 +20,26 @@ html, body {
     border: 0;
     line-height: 1;
     margin: 0;
-    font-size: .9rem;
-
+    font-size: .95rem;
+    font-family: 'Dosis', sans-serif !important;
     -webkit-background-size: cover;
     background-size: cover;
-    color: #555;
+    color: #0e0e0e !important;
+    position: relative;
+}
 
+.row, .columns, .column {
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: bold;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif !important;
 }
 
-/*
-a {
-    margin: 0 auto;
-    color: #fff;
-}
-*/
-
-.container {
-    height: 100%;
+footer {
+    position: relative;
 }
 
 /**--------- Aligning Divs ---------**/

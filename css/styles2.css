@@ -446,6 +446,90 @@ body.home {}
         }
 
 
+/* Modal*/
+#contactFormModal {
+    padding: 50px;
+    height: 600px;
+    width: 700px;
+}
+
+#contactFormModal .contain_ {
+    width: 500px;
+    height: auto;
+
+}
+
+    .contain_ .logo>* {
+        margin: 10px 0px 20px 0px;
+        padding: 3px 50px;
+        font-weight: 600;
+        font-size: 1.2rem
+}
+    .contain_ form {
+        height: 100%;
+        margin: 10px;
+        width: 100%;
+
+    }
+
+        form .form-ttl {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 20px !important;
+        }
+
+        form .form-cntnt {
+            height: auto;
+/*            border: .5px #555 solid;*/
+
+        }
+
+        form .form-cntnt input {
+/*            border: 1px solid #cacaca;*/
+            border: #cacaca solid .25px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 2.3rem;
+            padding: .5rem;
+
+            margin: 0 0 1rem;
+            font-family: inherit;
+            font-size: 1rem;
+            color: #0a0a0a;
+            background-color: #fefefe;
+            box-shadow: inset 0 0px 0px hsla(0,0%,4%,.1);
+            border-radius: 0;
+            -webkit-transition: -webkit-box-shadow .5s,border-color .25s ease-in-out;
+            transition: box-shadow .5s,border-color .25s ease-in-out;
+            -webkit-appearance: none
+        }
+
+        input[type=textarea] {
+            height: 9rem !important;
+            text-align: ;
+/*            overflow-y: scroll;*/
+        }
+
+/*        input[placeholder], [placeholder], *[placeholder]{}*/
+            input[type=textarea][placeholder]{
+                text-align: top;
+}
+
+        input[type=submit] {
+            padding: .5rem !important;
+            margin-top: 20px !important;
+
+        }
+
+/* ===\\================//=== *
+ * ====\\=== INSTAGRAM ===//==== *
+ * =====\\============//===== */
+#instagram {
+    height: auto;
+    min-height: calc(100vh - 150px);
+}
+
 
 
 /* ===\\================//=== *
