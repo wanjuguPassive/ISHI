@@ -1,6 +1,15 @@
 /*=========================================================================== */
         /*---------- General Styles -------------*/
 /*=========================================================================== */
+
+/*Fonts*/
+@import 'https://fonts.googleapis.com/css?family=Marcellus';
+/*font-family: 'Marcellus', serif;*/
+
+@import 'https://fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700';
+/*font-family: 'Cormorant SC', serif;*/
+
+
 html,
 body,
 div,
@@ -21,7 +30,11 @@ html, body {
     line-height: 1;
     margin: 0;
     font-size: .95rem;
+
     font-family: 'Dosis', sans-serif !important;
+/*    font-family: 'Cormorant SC', serif !important;*/
+/*    font-family: 'Marcellus', serif !important;*/
+
     -webkit-background-size: cover;
     background-size: cover;
     color: #0e0e0e !important;
@@ -36,6 +49,8 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-weight: 400;
     font-family: 'Dosis', sans-serif !important;
+/*    font-family: 'Cormorant SC', serif !important;*/
+/*    font-family: 'Marcellus', serif !important;*/
 }
 
 footer {

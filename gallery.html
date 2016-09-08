@@ -94,10 +94,17 @@
             transition: left .4s ease-in-out, top .4s ease-in-out .4s;
         }
 
+        .item.wide {
+            width: 600px;
+        }
 
         .item img {
             width: 300px;
             height: auto;
+        }
+
+        .item.wide img {
+            width: 600px;
         }
 
         .item .pic-overlay {
@@ -190,59 +197,6 @@
                 </div>
                 <!-- /toolbar -->
 
-                <!-- Masonry 1 -->
-                <div class="expanded row columns" id="masonry">
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/001.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/002.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/003.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/004.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/005.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/006.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/007.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/008.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/009.jpg">
-                    </div>
-
-                    <div class="item">
-                        <div class="pic-overlay"></div>
-                        <img src="images/gallery/010.jpg">
-                    </div>
-
-                </div>
 
                 <!-- Masonry 2 -->
                 <ul class="row columns " id="content">
@@ -251,7 +205,7 @@
                         <img src="images/gallery/001.jpg">
                     </li>
 
-                    <li class="item">
+                    <li class="item wide">
                         <div class="pic-overlay"></div>
                         <img src="images/gallery/002.jpg">
                     </li>
@@ -271,7 +225,7 @@
                         <img src="images/gallery/005.jpg">
                     </li>
 
-                    <li class="item">
+                    <li class="item wide">
                         <div class="pic-overlay"></div>
                         <img src="images/gallery/006.jpg">
                     </li>
@@ -294,6 +248,51 @@
                     <li class="item">
                         <div class="pic-overlay"></div>
                         <img src="images/gallery/010.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/011.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/012.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/013.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/014.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/015.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/016.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/018.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/019.jpg">
+                    </li>
+
+                    <li class="item">
+                        <div class="pic-overlay"></div>
+                        <img src="images/gallery/020.jpg">
                     </li>
 
                 </ul>
@@ -335,15 +334,16 @@
     <script src="js/masonry/jquery.masonry.min.js"></script>
     <script src="js/app.js"></script>
     <script>
-        $(window).on('load', function(){
+        $(document).ready(function(){
 
-            var $grid = $('#content').imagesLoaded( function() {
+            var $grid = $('#content');
+            $grid.imagesLoaded(function() {
                $grid.masonry({
                     itemSelector: '.item',
                     percentPosition: true,
                     columnWidth: 320,
-                   isFitWidth: true,
-              });
+                    isFitWidth: true,
+                });
             });
 
         });
