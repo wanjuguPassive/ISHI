@@ -1,9 +1,15 @@
 $(document).ready(function() {
 
-    //Scroll Animation
+    //Scroll Down Animation
     $(".scrollCue").click(function() {
     $('html,body').animate({
         scrollTop: $("#p_one").offset().top},
+        'slow');
+    });
+
+    $(".scrollUp_").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#intro").offset().top},
         'slow');
 });
 
