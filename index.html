@@ -107,7 +107,7 @@
     <main class="expanded row columns">  
         
         <!------------------------------------------------------------->
-        <!-- PAGE 1 -->
+        <!-- INTRO -->
         <!------------------------------------------------------------->
 
         <!----------------- CONTENT------------------------->
@@ -192,19 +192,50 @@
                 </a>
             </div>
 
+            <ul role="navigation" aria-label="Pagination" class="seq-pagination pages_">
+
+                <!-- step 1 -->
+                <li>
+                    <a href="#intro" rel="step1" title="Home Page">
+                        <span class="numeral">1</span>
+                        <span class="seq-tooltip">Visual Library</span>
+                    </a>
+                </li>
+                  <!-- step 2 -->
+                  <li>
+                      <a href="#step2" rel="step2" title="About">
+                          <span class="numeral">2</span>
+                          <span class="seq-tooltip">Social Digital</span>
+                      </a>
+                  </li>
+                  <!-- step 3 -->
+                  <li>
+                      <a href="#step3" rel="step3" title="Services">
+                          <span class="numeral">3</span>
+                          <span class="seq-tooltip">Rapid Development of Step-Based Applications</span>
+                      </a>
+                  </li>
+              </ul>
+
         </div>
     
-      <!------------------------------------------------------------->
-      <!-- PAGE 2 -->
-      <!------------------------------------------->
+    <!------------------------------------------------------------->
+    <!-- PAGE 1 -->
+    <!------------------------------------------->
+
     <!--- CONTENT -->
     <!------------------------------------------->
-    <div id="p_one" class="expanded row columns serv_">
+    <div id="p_one" class="expanded row columns clearfix">
+
 
         <!-- =================================== -->
         <!--- HEADER --->
         <!-- =================================== -->
-        <div class="expanded row columns homeHeader">
+        <div class="expanded row columns homeHeader"
+             data-anchor-target=".homeGrid"
+                data-start="position: absolute; opacity: 0"
+                data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
+                data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
 
             <!--LOGO - desktopOnly-->
             <div class="logoHolder desktopOnly row columns">
@@ -213,27 +244,81 @@
                 </div>
             </div>
 
-            <div id="header" class="black_ f-center expanded row columns">
-                <div class="head_ f-center">
-                  <div class="tabs_">
-                      <a class="select_" href="index.html#p_one">SERVICES</a>
-                  </div>
+            <div id="nav-anchor"></div>
 
-                  <div class="tabs_ ">
-                      <a href="gallery.html">GALLERY</a>
-                  </div>
 
-                  <div class="tabs_">
-                      <a href="instagram.html">INSTAGRAM</a>
-                  </div>
+            <nav id="header" class="black_ f-center expanded row columns">
+                <ul class="head_ f-center div_ ul_">
+                      <li class="tabs_">
+                          <a class="" href="#about">ABOUT</a>
+                      </li>
+                      <li class="tabs_">
+                          <a class="select_" href="#services">SERVICES</a>
+                      </li>
 
-                  <div class="tabs_">
-                      <a href="contact.html">CONTACT US</a>
-                  </div>
+                      <li class="tabs_ ">
+                          <a href="#p_two">GALLERY</a>
+                      </li>
+                </ul><!-- head_ end -->
+                <div class="head_ f-center div_ noul_">
+                      <div class="tabs_">
+                          <a href="instagram.html">INSTAGRAM</a>
+                      </div>
+
+                      <div class="tabs_">
+                          <a href="contact.html">CONTACT US</a>
+                      </div>
                 </div>
+            </nav> <!-- header end -->
+
+
+            <div id="header" class="black_ f-center expanded row columns divs_">
+                <div class="head_ f-center div_">
+                      <div class="tabs_">
+                          <a class="" href="#about">ABOUT</a>
+                      </div>
+                      <div class="tabs_">
+                          <a class="select_" href="#services">SERVICES</a>
+                      </div>
+
+                      <div class="tabs_ ">
+                          <a href="#p_two">GALLERY</a>
+                      </div>
+
+                      <div class="tabs_">
+                          <a href="instagram.html">INSTAGRAM</a>
+                      </div>
+
+                      <div class="tabs_">
+                          <a href="contact.html">CONTACT US</a>
+                      </div>
+                </div><!-- head_ end -->
             </div> <!-- header end -->
 
         </div><!-- homeHeader end -->
+
+
+        <!-- =================================== -->
+        <!--- ABOUT --->
+        <!-- =================================== -->
+        <div id="about" class="expanded row columns f-center">
+
+            <div class="container f-vert">
+                <div class="why_ f-vert">
+                  <h2>Ishi</h2>
+
+                    <h5>‘Ishi’ is a Swahili word meaning ‘Live’. Live where your heart is. Live where your Art is.
+                        <br>We hope to inspire others to live doing what they truly love and are passionate about (where your heart is) as well as what they are gifted in (where your Art is).
+                        <br>
+                        <br>
+                    As for us, the Visual-Digital Narrative did it. Here’s to those who love to create, and to do so boldly. For those who dare to live through their Art.</h5>
+                </div>
+
+            </div>
+
+
+        </div>
+
 
         <!-- =================================== -->
         <!--- SERVICES --->
@@ -247,7 +332,8 @@
                 <!-- Right Nav -->
                 <div class="seq-nav ind2">
 
-                  <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+                <!-- NAvigation button -->
+                  <ul role="navigation" aria-label="Pagination" class="seq-pagination slides_">
 
                     <!-- step 1 -->
                     <li>
@@ -349,6 +435,22 @@
 
     </div> <!-- p_one end -->
 
+
+
+    <!------------------------------------------------------------->
+    <!-- PAGE 2 -->
+    <!------------------------------------------->
+
+    <!--- CONTENT -->
+    <!------------------------------------------->
+    <div id="p_two" class="expanded row columns serv_">
+
+
+
+
+    </div>
+
+
     </main>
         <!-- main content -->
 
@@ -375,6 +477,7 @@
 
     <script src="js/motion-ui.js"></script>
     <script src="js/app.js"></script>
+<!--    <script src="js/skrollr.js"></script>-->
 
     <!----------------------------------------->
     <!--Vegas-->
@@ -392,6 +495,11 @@
             });
     </script>
     
+    <!----------------------------------------->
+    <!-- Smooth Scroll -->
+    <script src="js/smoothPageScroll/jquery.scrollto.js"></script>
+    <script src="js/smoothPageScroll/smoothScroll.js"></script>
+
     <!----------------------------------------->
     <!-- Two up -->
     <script src="js/twoup/imagesloaded.pkgd.min.js"></script>

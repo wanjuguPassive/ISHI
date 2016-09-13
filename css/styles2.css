@@ -23,6 +23,23 @@ body {
     font-family: 'Dosis', sans-serif !important;
 }
 
+#whole, #p_one, #p_two {
+    height: auto;
+    min-height: 100vh !important;
+
+}
+
+#p_one {
+
+
+}
+
+#p_two {
+
+
+}
+
+/*----------------------------------------------*/
 .btn_ .button {
     padding: 15px 40px;
     font-weight: 500;
@@ -61,16 +78,6 @@ body {
     color: #0e0e0e !important;
 }
 
-#whole, #p_one {
-    height: auto;
-    min-height: 100vh;
-
-}
-
-#p_one {
-
-
-}
 
 
 /* ===\\================================//=== *
@@ -294,7 +301,138 @@ body.home {}
                   -ms-transform: rotate(45deg);
                 }
 
+    /*-----------------------*/
+    /* Page Nav */
+    .seq-pagination.pages_ {
+        display: none;
+    }
 
+    .seq-pagination.pages_ {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+    }
+
+            .seq-pagination {
+          margin: 0;
+          padding: 0;
+        }
+
+        .seq-pagination a {
+          text-decoration: none;
+        }
+
+        .seq-pagination li {
+          /* Make the pagination links circles */
+          display: inline-block;
+          vertical-align: top;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          position: relative;
+          cursor: pointer;
+          width: 1em;
+          height: 1em;
+          margin: 0;
+          margin-right: 1em;
+          padding: 0;
+          border: white solid 2px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.6);
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-property: background;
+          transition-property: background;
+        }
+
+        .seq-pagination li .numeral {
+          /* Numbers shown in pagination */
+          font-size: .6875em;
+          font-weight: 700;
+          color: black;
+          vertical-align: top;
+          line-height: 1.45454545em;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-property: color;
+          transition-property: color;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        .seq .seq-pagination li:focus,
+        .seq .seq-pagination li:hover {
+          background: white;
+        }
+
+        .seq .seq-pagination li:focus .numeral,
+        .seq .seq-pagination li:hover .numeral {
+          color: black;
+        }
+
+        .seq-pagination li:before {
+          /* Circle around pagination. Animated when hovered over */
+          pointer-events: none;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: white;
+          border: white solid 2px;
+          border-radius: 50%;
+          width: 1em;
+          height: 1em;
+          opacity: 0;
+          -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
+          -ms-transform: translateX(-50%) translateY(-50%) scale(3);
+          transform: translateX(-50%) translateY(-50%) scale(3);
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+          -webkit-transition-property: -webkit-transform, opacity;
+          transition-property: transform, opacity;
+        }
+
+        .seq-pagination li.seq-current {
+          cursor: auto;
+        }
+
+        .seq-pagination li.seq-current:before {
+          /* Animate the circle around the pagination link */
+          opacity: 1;
+          -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+          -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+          transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+
+        .seq-pagination li:after {
+          /* Lines between dots */
+          pointer-events: none;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          height: 2px;
+          width: 1.25em;
+          background: white;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        .seq-pagination li:last-child {
+          /* Remove the line after the last dot as it's not needed */
+          margin-bottom: 0;
+          margin-right: 0;
+        }
+
+        .seq-pagination li:last-child:after {
+          content: none;
+        }
+
+
+
+/*-----------------------*/
 .seq-content .btn_ {
     margin-top: 50px !important;
 }
@@ -335,46 +473,96 @@ body.home {}
 
     .homeHeader #header {
         height: 60px;
-        width: auto;
+        width: 100%;
     }
 
         .homeHeader #header .head_{
             height: 60px;
-/*            width: 190px;*/
+            margin: 0!important;
         }
 
-        #header .head_ .tabs_ {
-        position: relative;
+            #header .head_.ul_{
 
-        }
+            }
 
-        #header .head_ .tabs_ a {
-            margin: 0 auto;
-            padding: 10px 25px;
-            font-size: 1rem;
-            line-height: 1.2;
-/*            letter-spacing: -.1rem;*/
-            font-weight: 500;
-            color: #0e0e0e;
-        }
+            #header .head_.noul_{
 
-        #header .head_ .tabs_ a.select_ {
-            border: solid .5px #0e0e0e;
-            background: #fff;
-            color: #0e0e0e;
-        }
+            }
 
+            #header .head_ .tabs_ {
+            position: relative;
 
-/* ===\\================//=== *
- * ====\\=== SERVICES ===//==== *
- * =====\\============//===== */
-#whole, #p_one.serv {
-    height: 100vh !important;
-    min-height: 100vh;
+            }
 
+            #header .head_ .tabs_ a {
+                margin: 0 auto;
+                padding: 10px 25px;
+                font-size: 1rem;
+                line-height: 1.2;
+    /*            letter-spacing: -.1rem;*/
+                font-weight: 500;
+                color: #0e0e0e;
+            }
+
+            #header .head_ .tabs_ a.select_ {
+                border: solid .5px #0e0e0e;
+                background: #fff;
+                color: #0e0e0e;
+            }
+/*Smooth Scroll*/
+.divs_ {
+    display: none !important;
 }
 
-.serv_ #services {
+
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+
+
+
+.stick#header {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+
+/*    background-color: rgba(0, 0, 0, 0.6);*/
+    background-color: #fff;
+}
+
+        .stick#header .tabs_ a {}
+        .stick#header .tabs_ a.select_ {}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+/* ===\\================//=== *
+ * ====\\===PAGE 1 ===//==== *
+ * =====\\============//===== */
+
+
+
+ /* ====\\=== ABOUT ===//==== */
+#about{
+    height: 300px;
+}
+
+
+ /* ====\\=== SERVICES ===//==== */
+#services {
     min-height: calc(100vh - 150px)!important;
 
 }
@@ -385,8 +573,12 @@ body.home {}
     }
 
 /* ===\\================//=== *
- * ====\\=== GALLERY ===//==== *
+ * ====\\===PAGE 2 ===//==== *
  * =====\\============//===== */
+#p_two {}
+
+/* ====\\=== GALLERY ===//==== */
+
 #gallery {
     min-height: calc(100vh - 150px)
 }
