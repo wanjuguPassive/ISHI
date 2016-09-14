@@ -2,9 +2,9 @@ $(document).ready(function() {
 
     //Scroll Down Animation
     $(".scrollCue").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#p_one").offset().top},
-        'slow');
+        $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        1200 );
     });
 
     $(".scrollUp_").click(function() {

@@ -167,7 +167,7 @@
               <!-- scroll down button -->
             <a class="expanded row columns scrollDown_ f-center" href="#">
               <div class="scrollCue f-center"
-                data-anchor-target="#p_one"
+                data-anchor-target="#about"
                 data-100="opacity: 1;"
                 data-250="opacity: 1;"
               >
@@ -231,11 +231,12 @@
         <!-- =================================== -->
         <!--- HEADER --->
         <!-- =================================== -->
+        <div id="nav-anchor"></div>
+
         <div class="expanded row columns homeHeader"
-             data-anchor-target=".homeGrid"
-                data-start="position: absolute; opacity: 0"
-                data-top-top="position: fixed; background-color: rgba(255,255,255,.98); opacity: 1;"
-                data-200-top-top="background-color: rgba(255,255,255,.98); opacity: 0;">
+             >
+
+
 
             <!--LOGO - desktopOnly-->
             <div class="logoHolder desktopOnly row columns">
@@ -244,16 +245,13 @@
                 </div>
             </div>
 
-            <div id="nav-anchor"></div>
-
-
             <nav id="header" class="black_ f-center expanded row columns">
                 <ul class="head_ f-center div_ ul_">
                       <li class="tabs_">
-                          <a class="" href="#about">ABOUT</a>
+                          <a class="nav-active" href="#about">ABOUT</a>
                       </li>
                       <li class="tabs_">
-                          <a class="select_" href="#services">SERVICES</a>
+                          <a class="" href="#services">SERVICES</a>
                       </li>
 
                       <li class="tabs_ ">
@@ -275,10 +273,10 @@
             <div id="header" class="black_ f-center expanded row columns divs_">
                 <div class="head_ f-center div_">
                       <div class="tabs_">
-                          <a class="" href="#about">ABOUT</a>
+                          <a class="" href="#p_one">ABOUT</a>
                       </div>
                       <div class="tabs_">
-                          <a class="select_" href="#services">SERVICES</a>
+                          <a class="select_" href="#about">SERVICES</a>
                       </div>
 
                       <div class="tabs_ ">
@@ -323,9 +321,11 @@
         <!-- =================================== -->
         <!--- SERVICES --->
         <!-- =================================== -->
-        <div id="services" class="expanded row columns">
+        <div id="services" class="expanded row columns serv_">
 
             <div class="container">
+
+            <h2>SERVICES</h2>
             <div id="sequence" class="seq">
 
                 <!---------------------------------------------->
@@ -443,9 +443,17 @@
 
     <!--- CONTENT -->
     <!------------------------------------------->
-    <div id="p_two" class="expanded row columns serv_">
+    <div id="p_two" class="expanded row columns">
+
+        <!-- =================================== -->
+        <!--- SERVICES --->
+        <!-- =================================== -->
+        <h2>GALLERY</h2>
+
+        <div class="gal">
 
 
+        </div>
 
 
     </div>
@@ -499,6 +507,7 @@
     <!-- Smooth Scroll -->
     <script src="js/smoothPageScroll/jquery.scrollto.js"></script>
     <script src="js/smoothPageScroll/smoothScroll.js"></script>
+<!--    <script src="js/smoothPageScroll/stickydiv.js"></script>-->
 
     <!----------------------------------------->
     <!-- Two up -->

@@ -127,7 +127,7 @@ body {
   position: absolute;
   z-index: 100;
   top: 200px;
-  left: 50%;
+  left: 90%;
   padding: .5em 1em;
   text-align: center;
   background: black;
@@ -544,7 +544,7 @@ body {
   }
 
     .seq .seq-nav.ind2 {
-        top: 80%;
+        top: 50%;
     }
 
   .seq .seq-pagination li {
@@ -696,7 +696,7 @@ body {
 
 @media only screen and (min-height: 400px) {
   .seq .seq-next-button {
-    bottom: 2em;
+    bottom: 20%;
   }
 }
 

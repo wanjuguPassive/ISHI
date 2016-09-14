@@ -7,11 +7,19 @@ $(document).ready(function(){
          */
         $(window).scroll(function(){
             var window_top = $(window).scrollTop(); // the "12" should equal the margin-top value for nav.stick
+//            var div_top = $('#nav-anchor').offset().top;
+//                if (window_top > div_top) {
+//                    $('nav').addClass('stick');
+//                } else {
+//                    $('nav').removeClass('stick');
+//                }
+
+
             var div_top = $('#nav-anchor').offset().top;
                 if (window_top > div_top) {
-                    $('nav').addClass('stick');
+                    $('.homeHeader').addClass('stick');
                 } else {
-                    $('nav').removeClass('stick');
+                    $('.homeHeader').removeClass('stick');
                 }
         });
 
@@ -41,7 +49,7 @@ $(document).ready(function(){
         } // this for loop fills the aArray with attribute href values
 
         $(window).scroll(function(){
-            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowPos = $(window).scrollTop() + 150; // get the offset of the window from the top of page
             var windowHeight = $(window).height(); // get the height of the window
             var docHeight = $(document).height();
 
