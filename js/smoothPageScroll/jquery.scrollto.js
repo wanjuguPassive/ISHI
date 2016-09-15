@@ -16,7 +16,7 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
         },
         animation: {
             easing: 'swing',
-            duration: 700,
+            duration: 1200,
             complete: $.noop,
             step: $.noop
         }

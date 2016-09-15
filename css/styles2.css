@@ -575,10 +575,23 @@ blockquote:before, blockquote:after {
 
  /* ====\\=== ABOUT ===//==== */
 #about{
-    height: 500px;
-    margin-top: 20px !important;
+    height: calc(100vh - 150px);
+    min-height: 600px;
+/*    margin-top: 20px !important;*/
 }
 
+    #about .container {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+/*        min-height: 500px;*/
+/*            margin: 20px;*/
+    }
+
+        #about .container .why_ {
+            height: auto;
+/*            margin: 20px 0px 40px 0px !important;*/
+        }
 
  /* ====\\=== SERVICES ===//==== */
 #services {
@@ -679,14 +692,14 @@ blockquote:before, blockquote:after {
 /*        background-image: url(/images/img/contact2.jpg);*/
 }
 
-    #contact #about {
+    #contact #abt_ {
         width: 80%;
         min-width: 500px;
         max-width: 700px;
         min-height: calc(100vh - 200px);
     }
 
-        #about .container {
+        #abt_ .container {
             width: 80%;
             max-width: 600px;
             height: auto;
@@ -694,13 +707,8 @@ blockquote:before, blockquote:after {
 /*            margin: 20px;*/
         }
 
-        #about .container .why_ {
-            height: auto;
-            margin: 20px 0px 40px 0px !important;
-        }
 
-
-        #about .container .talk_ {
+        #abt_ .container .talk_ {
             height: 250px;
             margin-top: 20px !important;
             width: 80%;
