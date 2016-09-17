@@ -22,12 +22,11 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
-    <link rel="stylesheet" href="css/motion-ui.css" />
+
     
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
 
-<!--    <link rel="stylesheet" type="text/css" href="ben/css/water.css" />-->
     <link rel="stylesheet" type="text/css" href="ben/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="ben/css/bg" />
 
@@ -107,6 +106,89 @@
 <!-- ========================================================= -->    
 <body class="home">
 
+    <!-- ================================ -->
+<!--- MODALS ----->
+    <div class="reveal f-center" id="contactFormModal" data-reveal>
+
+        <div class="row columns contain_ f-vert">
+            <!-- logo -->
+            <div class="logoHolder desktopOnly row columns">
+                <div class="logo f-center">
+                    <p class="logoTitle black_">ISHI DIGITAL</p>
+                </div>
+            </div>
+
+            <!-- form -->
+            <form>
+                <!--title-->
+                <div class="row columns form-ttl f-center">
+                    <p class="">Fill in the form below and we'll get back to you as soon as possible...</p>
+                </div>
+
+                <!--content-->
+                <div class="row columns form-cntnt">
+
+                    <!-- names -->
+                    <div class="row">
+                        <div class="small-5 columns">
+                            <label><input type="text" placeholder="First Name" name="firstname">
+                            </label>
+                        </div>
+                        <div class="small-2 columns"></div>
+                        <div class="small-5 columns ">
+                            <label><input type="text" placeholder="Last Name" name="lastname">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- email -->
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="email" placeholder="Email Address" name="email">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="row">
+                        <div class="small-10 columns">
+                            <label><input type="text" placeholder="Subject" name="subject">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="textarea" placeholder="Your Message" name="message">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="row f-center">
+
+                        <div class="small-5 columns">
+                            <label class="btn_">
+                                <input type="submit" class="button" value="Submit">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+<!-- ================================ -->
+
 <div id="whole">
 
     <div class="homeLoad"></div>
@@ -120,14 +202,14 @@
 
         <!----------------- CONTENT------------------------->
         
-        <div id="intro" class=" intro f-vert" >
-            
-            <!-- Backbround -->
-            <div class="Background">
-                <canvas class="Background-canvas"></canvas>
-            </div>
 
-            
+        <!-- Backbround -->
+        <div class="Background">
+            <canvas class="Background-canvas"></canvas>
+        </div>
+        <!-- Intro -->
+        <div id="intro" class=" intro f-vert" >
+
             <!-- overlay -->
             <div class="overlay_"></div>
             <div class="slide_ f-vert" >
@@ -155,11 +237,13 @@
                       </div>
                     </li>
 
+<!--
                     <li class="orbit-slide f-center">
                       <div class="logo_text  white_ f-center">
                         <a href="#" class="" > SOCIAL AND DIGITAL CURATOR </a>
                       </div>
                     </li>
+-->
               
               </ul>
             
@@ -381,7 +465,7 @@
                           <h4>Buy our Photography in large canvas prints <br>ranging from 24*16 inch to 60*30 </h4>
 
                             <div class="btn_">
-                              <a class="button " href="contact.html#about" target="_blank">Get a Quotation</a>
+                              <a class="button " data-open="contactFormModal">Get a Quotation</a>
                             </div>
 
                         </div>
@@ -443,7 +527,7 @@
         $(document).foundation(); 
     </script>
 
-    <script src="js/motion-ui.js"></script>
+
     <script src="js/app.js"></script>
 <!--    <script src="js/skrollr.js"></script>-->
 
@@ -536,12 +620,11 @@
     <!-- Smooth Scroll -->
     <script src="js/smoothPageScroll/jquery.scrollto.js"></script>
     <script src="js/smoothPageScroll/smoothScroll.js"></script>
-<!--    <script src="js/smoothPageScroll/stickydiv.js"></script>-->
 
     <!----------------------------------------->
     <!-- Two up -->
     <script src="js/twoup/imagesloaded.pkgd.min.js"></script>
-<!--      <script src="js/twoup/hammer.min.js"></script>-->
+      <script src="js/twoup/hammer.min.js"></script>
     <script src="js/twoup/sequence.min.js"></script>
     <script src="js/twoup/sequence-theme.two-up.min.js"></script>
 

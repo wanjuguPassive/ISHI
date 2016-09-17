@@ -12,7 +12,7 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
     options = $.extend({}, {
         gap: {
             x: 0,
-            y: -150
+            y: -155
         },
         animation: {
             easing: 'swing',
