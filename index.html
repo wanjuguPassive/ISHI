@@ -27,6 +27,10 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
 
+<!--    <link rel="stylesheet" type="text/css" href="ben/css/water.css" />-->
+    <link rel="stylesheet" type="text/css" href="ben/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="ben/css/bg" />
+
 
     <link href="css/sequence-theme.two-up.css" rel="stylesheet" media="all">
   <!--[if lt IE 9]>
@@ -40,6 +44,10 @@
     <!--- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="ben/js/wow.js" type="text/javascript"></script>
+    <script src="ben/js/parallax.js"></script>
+    <script src="ben/js/cart.js"></script>
+
 
     <style>
         /*-- Cormorant -- */
@@ -112,13 +120,15 @@
 
         <!----------------- CONTENT------------------------->
         
-        <div id="intro" class="orbit intro f-vert" 
-             role="region" 
-             aria-label="Ishi Doctrine" 
-             data-orbit
-             data-anim-in-from-left>
+        <div id="intro" class=" intro f-vert" >
             
+            <!-- Backbround -->
+            <div class="Background">
+                <canvas class="Background-canvas"></canvas>
+            </div>
+
             
+            <!-- overlay -->
             <div class="overlay_"></div>
             <div class="slide_ f-vert" >
             
@@ -153,6 +163,7 @@
               
               </ul>
             
+<!--
               <nav class="orbit-bullets">
                 <button class="is-active" data-slide="0">
                     <span class="show-for-sr">First slide details.</span>
@@ -162,10 +173,11 @@
                     <span class="show-for-sr">Second slide details.</span>
                 </button>
               </nav>
+-->
             </div>
 
               <!-- scroll down button -->
-            <a class="expanded row columns scrollDown_ f-center" href="#">
+            <a href="#" class="expanded row columns scrollDown_ f-center">
               <div class="scrollCue f-center">
                     <span></span>
               </div>
@@ -178,11 +190,7 @@
                     back to top
                 </div>
                 <a class="expanded row columns scrollDown_  f-center" href="#">
-                  <div class="scrollCue scrollUp_ f-center"
-                    data-anchor-target="#intro"
-                    data-100="opacity: 1;"
-                    data-250="opacity: 1;"
-                  >
+                  <div class="scrollCue scrollUp_ f-center">
                         <span></span>
                   </div>
                 </a>
@@ -205,8 +213,7 @@
         <!-- =================================== -->
         <div id="nav-anchor"></div>
 
-        <div class="expanded row columns homeHeader"
-             >
+        <div class="expanded row columns homeHeader">
 
 
 
@@ -217,19 +224,22 @@
                 </div>
             </div>
 
-            <nav id="header" class="black_ f-center expanded row columns">
-                <ul class="head_ f-center div_ ul_">
-                      <li class="tabs_">
-                          <a class="" href="#about">ABOUT</a>
-                      </li>
-                      <li class="tabs_">
-                          <a class="" href="#services">SERVICES</a>
-                      </li>
+            <!-- NAV -->
+            <div id="header" class="black_ f-center expanded row columns nav-cont">
+                <nav id="nav_" class="">
+                    <ul class="head_ f-center div_ ul_">
+                          <li class="tabs_">
+                              <a class="" href="#about">ABOUT</a>
+                          </li>
+                          <li class="tabs_">
+                              <a class="" href="#services">SERVICES</a>
+                          </li>
 
-                      <li class="tabs_ ">
-                          <a href="#p_two">GALLERY</a>
-                      </li>
-                </ul><!-- head_ end -->
+                          <li class="tabs_ ">
+                              <a href="#p_two">GALLERY</a>
+                          </li>
+                    </ul><!-- head_ end -->
+                </nav>
                 <div class="head_ f-center div_ noul_">
                       <div class="tabs_">
                           <a href="instagram.html">INSTAGRAM</a>
@@ -239,31 +249,9 @@
                           <a href="contact.html">CONTACT US</a>
                       </div>
                 </div>
-            </nav> <!-- header end -->
+                 <!-- header end -->
+            </div>
 
-
-            <div id="header" class="black_ f-center expanded row columns divs_">
-                <div class="head_ f-center div_">
-                      <div class="tabs_">
-                          <a class="" href="#p_one">ABOUT</a>
-                      </div>
-                      <div class="tabs_">
-                          <a class="select_" href="#about">SERVICES</a>
-                      </div>
-
-                      <div class="tabs_ ">
-                          <a href="#p_two">GALLERY</a>
-                      </div>
-
-                      <div class="tabs_">
-                          <a href="instagram.html">INSTAGRAM</a>
-                      </div>
-
-                      <div class="tabs_">
-                          <a href="contact.html">CONTACT US</a>
-                      </div>
-                </div><!-- head_ end -->
-            </div> <!-- header end -->
 
         </div><!-- homeHeader end -->
 
@@ -460,7 +448,75 @@
 <!--    <script src="js/skrollr.js"></script>-->
 
     <!----------------------------------------->
+    <!-- Ben -->
+    <script src="ben/js/water.js"></script>
+    <script src="ben/js/modernizr-custom.js"></script>
+    <script src="ben/js/imagesloaded.pkgd.min.js"></script>
+	<script src="ben/js/masonry.pkgd.min.js"></script>
+	<script src="ben/js/classie.js"></script>
+	<script src="ben/js/main.js"></script>
+    <script src="ben/js/clipboard.min.js"></script>
+    <script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : -0.5,
+					y : 1
+				},
+				onOpenItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 50);
+							el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+							el.style.transform = 'scale3d(0.1,0.1,1)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+							el.style.transition = 'opacity .4s, transform .4s';
+							el.style.WebkitTransform = 'scale3d(1,1,1)';
+							el.style.transform = 'scale3d(1,1,1)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+    <!----------------------------------------->
     <!--Vegas-->
+<!--
     <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.js"></script>
     <script>
         $("#intro").vegas({
@@ -474,6 +530,7 @@
             overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
             });
     </script>
+-->
     
     <!----------------------------------------->
     <!-- Smooth Scroll -->

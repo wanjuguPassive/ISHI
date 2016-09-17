@@ -7,7 +7,7 @@
  * 2013/02/17
  **/
 $.scrollTo = $.fn.scrollTo = function(x, y, options){
-    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+    if (!(this instanceof $)) return $.fn.scrollTo.apply($('nav'), arguments);
 
     options = $.extend({}, {
         gap: {

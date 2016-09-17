@@ -3,15 +3,15 @@ $(document).ready(function() {
     //Scroll Down Animation
     $(".scrollCue").click(function() {
         $('html,body').animate({
-        scrollTop: $("#about").offset().top},
+        scrollTop: $("#p_one").offset().top},
         1200 );
     });
 
-    $(".scrollUp_").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#intro").offset().top},
-        'slow');
-});
+//    $(".scrollUp_").click(function() {
+//    $('html,body').animate({
+//        scrollTop: $("#intro").offset().top},
+//        'slow');
+//});
 
 	// Initialize Masonry
 //	$('#content').masonry({
