@@ -187,9 +187,9 @@
             <div id="header" class="black_ f-center expanded row columns">
                 <div class="head_ f-center">
 
-                  <li class="tabs_">
+                  <div class="tabs_">
                       <a class="" href="index.html#about">ABOUT</a>
-                  </li>
+                  </div>
                   <div class="tabs_">
                       <a href="index.html#services">SERVICES</a>
                   </div>
@@ -216,32 +216,31 @@
         <!-- =================================== -->
         <div id="contact" class="expanded row columns">
 
-            <!-- banner -->
-            <div id="banner_" class="expanded row columns"></div>
+            <div class="contact_cont ">
+                <!-- banner -->
+                <div id="banner_" class="small-12 medium-3 columns"></div>
 
-            <div id="abt_" class="expanded row columns f-center">
+                <!-- content -->
+                <div id="abt_" class="small-12 medium-9 columns f-center">
 
-                <div class="container f-vert">
+                    <div class="container f-center">
+                        <div class="talk_ f-vert">
+                             <h2>Talk to us</h2>
 
-                    <div class="talk_ f-vert">
-                         <h2>Talk to us</h2>
-
-                        <div class="inner">
-                            <div class="cont_ f-vert">
-                                <h5>Tel: +254 777 777</h5>
-                                <h5>Email: info@ishidigital.com</h5>
-                                <p class="btn_ f-center">
-                                    <a class="button" data-open="contactFormModal"> send a message </a>
-                                </p>
+                            <div class="inner">
+                                <div class="cont_ f-vert">
+                                    <h5>Tel: +254 777 777</h5>
+                                    <h5>Email: info@ishidigital.com</h5>
+                                    <p class="btn_ f-center">
+                                        <a class="button" data-open="contactFormModal"> send a message </a>
+                                    </p>
+                                </div>
                             </div>
+                        </div> <!-- talk end -->
 
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+                    </div> <!-- container end -->
+                </div> <!-- abt end -->
+            </div> <!-- contact_cont end -->
         </div><!--contact end -->
 
     </div> <!-- p_one end -->
@@ -279,7 +278,7 @@
     <script>
         $("#banner_").vegas({
             slides: [
-                {src: "images/img/contact2.jpg"},
+                {src: "images/img/contact3.jpg"},
             ],
             overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/overlays/01.png'
             });
