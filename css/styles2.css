@@ -260,11 +260,10 @@ body.home {}
         width: 100;
     }
           .scrollCue {
-    /*
             position: absolute;
             bottom: 37px;
             left: 50%;
-    */
+
             width: 43px;
             height: 43px;
     /*        margin-left: -23px;*/
@@ -513,6 +512,7 @@ blockquote:before, blockquote:after {
     .content_cont {
         padding: 20px !important;
         width: 100%;
+        max-width: 500px;
 }
 
 /* ===\\================//=== *
@@ -657,20 +657,26 @@ blockquote:before, blockquote:after {
         }
     }
 
+        #abt_ .josie {
+            width: 70%;
+        }
+
+
         #abt_ .container {
             width: 80%;
             max-width: 600px;
             height: auto;
-            min-height: 500px;
+/*            min-height: 00px;*/
 /*            margin: 20px;*/
         }
 
 
         #abt_ .container .talk_ {
-            height: 250px;
+            height: auto;
             margin-top: 20px !important;
             width: 80%;
             border: #555 solid .2px;
+            padding: 20px !important;
         }
 
             .talk_ .inner {
@@ -808,7 +814,7 @@ footer {
         font-size: .9rem;
     }
 
-    footer .cont_ .eml_ {
+    .eml_ {
         text-decoration: underline;
     }
     footer .cont_ .lg_ img {
