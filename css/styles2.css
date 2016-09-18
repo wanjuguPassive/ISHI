@@ -640,13 +640,15 @@ blockquote:before, blockquote:after {
 .gal {
     min-height: calc(100vh - 36px);
     height: auto;
-    background-color: #0e0e0e;
+    color: #0e0e0e !important;
+/*    background-color: #0e0e0e;*/
 }
 /* ====\\=== GALLERY ===//==== */
 
 #gallery {
     min-height: calc(100vh - 150px);
     height: auto;
+    width: 100%;
 }
 
 /*TOOLBAR*/

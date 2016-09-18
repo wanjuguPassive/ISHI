@@ -27,8 +27,14 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.2.1/vegas.min.css" >
 
+    <!-- ben -->
+    <link rel="stylesheet" type="text/css" href="ben/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="ben/css/main.css" />
     <link rel="stylesheet" type="text/css" href="ben/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="ben/css/bg" />
+    <link rel="stylesheet" type="text/css" href="ben/css/bg.css" />
+    <link rel="stylesheet" type="text/css" href="ben/css/water.css">
+    <link rel="stylesheet" type="text/css" href="ben/css/component.css">
+	<link rel="stylesheet" type="text/css" href="ben/css/style2.css" />
 
 
     <link href="css/sequence-theme.two-up.css" rel="stylesheet" media="all">
@@ -44,7 +50,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="ben/js/wow.js" type="text/javascript"></script>
-    <script src="ben/js/parallax.js"></script>
+<!--    <script src="ben/js/parallax.js"></script>-->
     <script src="ben/js/cart.js"></script>
 
 
@@ -106,7 +112,34 @@
 <!-- ========================================================= -->    
 <body class="home">
 
-    <!-- ================================ -->
+<!-- ================================ -->
+<!--- SCRIPTS ----->
+<!--
+    <script language="javascript">
+    document.onmousedown=disableclick;
+    status="Ops this feature is disaled";
+    function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         alert(status);
+         return false;
+       }
+    }
+    </script>
+-->
+<script>
+function showDiv() {
+    document.getElementById('orderedProductsTbl').style.display = "block";
+}
+function closeDiv() {
+    document.getElementById('orderedProductsTbl').style.display = "none";
+}
+
+    new WOW().init();
+</script>
+
+<!-- ================================ -->
 <!--- MODALS ----->
     <div class="reveal f-center" id="contactFormModal" data-reveal>
 
@@ -490,22 +523,136 @@
     <div id="p_two" class="expanded row columns">
 
         <!-- =================================== -->
-        <!--- SERVICES --->
+        <!--- GALLERY --->
         <!-- =================================== -->
         <h2>GALLERY</h2>
 
-        <div class="gal">
+        <div class="gal f-center">
+            <div id="gallery" class="expanded row columns">
+
+              <!-- toolbar -->
+<!--
+                <div class="toolbar addb4 desktopOnly">
+
+                    <div class="right addb4 desktopOnly">
+                        <div class="icon slideview v_middle desktopOnly" onclick="location.href='slideshow/overview.html';">
+                            <img src="images/icon-slideshow.png" />
+                        </div>
+                        <div class="icon circles active v_middle" onclick="location.href='grid/overview.html';">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="icon squares v_middle desktopOnly" onclick="location.href='scroll/overview.html#img1';">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+-->
+                <!-- /toolbar -->
+
+                    <!-- Masonry Ben -->
+                    <div class="section-grid" id="sec">
+                    <div class="content">
+                    <div class="grid">
+                        <div class="grid__item wow slideInLeft" data-size="1280x857">
+                            <a href="../large/001.jpg" class="img-wrap">
+                                <img src="images/gallery/001.jpg" alt="img01" />
+                                <div class="description description--grid">
+                                    <h3>Mother's Love</h3>
+                                    <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
+                                    <div class="details">
+                                        <ul>
+                                            <li> <input type="button" value="Add to cart" onclick="AddtoCart('mother','mothers love',50)"/></li>
+                                            <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+                                            <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+                                            <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+                                            <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+                                            <li><i class="icon icon-iso"></i><span>80</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__item wow slideInLeft" data-size="1280x1280">
+                            <a href="../large/002.jpg" class="img-wrap"><img src="images/gallery/002.jpg" alt="img02" />
+                                <div class="description description--grid">
+                                    <h3>Silent Killer</h3>
+                                    <p>Cows’ milk protein may be the single most significant chemical carcinogen to which humans are exposed. <em>&mdash; T. Colin Campbell</em></p>
+                                    <div class="details">
+                                        <ul>
+                                            <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+                                            <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+                                            <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+                                            <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+                                            <li><i class="icon icon-iso"></i><span>80</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__item wow slideInRight" data-size="1280x853">
+                            <a href="../large/003.jpg" class="img-wrap"><img src="images/gallery/003.jpg" alt="img03" />
+                                <div class="description description--grid">
+                                    <h3>Senseless Suffering</h3>
+                                    <p>The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?' <em>&mdash; Jeremy Bentham</em></p>
+                                    <div class="details">
+                                        <ul>
+                                            <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+                                            <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+                                            <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+                                            <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+                                            <li><i class="icon icon-iso"></i><span>80</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__item wow slideInRight" data-size="865x1280">
+                            <a href="../large/004.jpg" class="img-wrap"><img src="images/gallery/004.jpg" alt="img04" />
+                                <div class="description description--grid">
+                                    <h3>Rabbit Intelligence</h3>
+                                    <p>If a rabbit defined intelligence the way man does, then the most intelligent animal would be a rabbit, followed by the animal most willing to obey the commands of a rabbit. <em>&mdash; Robert Brault</em></p>
+                                    <div class="details">
+                                        <ul>
+                                            <li><span><input type="button" value="Add to cart" onclick="AddtoCart('Rabbit Intelligence','rabbit defined intelligence the way man does',50)"/></span></li>
+                                            <li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+                                            <li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+                                            <li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+                                            <li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+                                            <li><i class="icon icon-iso"></i><span>80</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div> <!-- grid end -->
+
+                    <!-- preview -->
+                    <div class="preview">
+                        <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+                        <div class="description description--preview"></div>
+                    </div><!-- /preview -->
 
 
-        </div>
+                </div> <!-- content end -->
+                </div> <!-- section-grid end -->
 
+            </div> <!-- gallery end -->
+        </div> <!-- gal end -->
 
     </div>
 
 
-    </main>
-        <!-- main content -->
+</main>
+<!-- main content -->
 
+
+    <!------------------------------------------------------------->
+    <!-- FOOTER -->
+    <!------------------------------------------->
     <footer>
         <div class="inner">
             <div class="cont_ f-vert">
@@ -624,7 +771,7 @@
     <!----------------------------------------->
     <!-- Two up -->
     <script src="js/twoup/imagesloaded.pkgd.min.js"></script>
-      <script src="js/twoup/hammer.min.js"></script>
+<!--      <script src="js/twoup/hammer.min.js"></script>-->
     <script src="js/twoup/sequence.min.js"></script>
     <script src="js/twoup/sequence-theme.two-up.min.js"></script>
 
