@@ -260,9 +260,11 @@ body.home {}
         width: 100;
     }
           .scrollCue {
+/*
             position: absolute;
             bottom: 37px;
             left: 50%;
+*/
 
             width: 43px;
             height: 43px;
@@ -274,6 +276,12 @@ body.home {}
             text-align: center;
             cursor: pointer;
           }
+
+            .scrollCue.lndn_ {
+                position: absolute;
+                bottom: 37px;
+                left: 50%;
+            }
 
             .scrollCue span {
     /*
@@ -307,10 +315,6 @@ body.home {}
             font-weight: 400;
             color: #000;
             text-transform: uppercase;
-        }
-
-        .scrollUp_ {
-
         }
 
             .scrollUp_ {
