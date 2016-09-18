@@ -13,7 +13,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
-    
+<!--    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">-->
     <style>
 
 </style>
@@ -41,6 +41,7 @@
   <!--[if lt IE 9]>
     <link href="css/sequence-theme.two-up-ie8.css" rel="stylesheet" media="all"> <![endif]-->
 
+    <link href="css/jquery.bxslider.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="css/styles2.css" media="all and (min-width: 769px)" />
     <link rel="stylesheet" type="text/css" href="css/styles_mobile.css" media="all and (max-width: 768px)" />
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css" media="all" />
@@ -48,10 +49,12 @@
 
     <!--- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/modernizr.js"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
     <script src="ben/js/wow.js" type="text/javascript"></script>
-<!--    <script src="ben/js/parallax.js"></script>-->
-    <script src="ben/js/cart.js"></script>
+    <script src="ben/js/cart.js" type="text/javascript"></script>
+
+
 
 
     <style>
@@ -245,6 +248,8 @@ function closeDiv() {
 
             <!-- overlay -->
             <div class="overlay_"></div>
+
+            <!-- the slides -->
             <div class="slide_ f-vert" >
             
                 <!--desktopOnly-->
@@ -253,44 +258,29 @@ function closeDiv() {
                         <p class="logoTitle white_ ">ISHI DIGITAL</p>
                     </div>
                 </div>
-              <ul class="orbit-container ">
-<!--
-                    <button class="orbit-previous">
-                        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
-                    </button>
 
-                    <button class="orbit-next">
-                        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
-                    </button>
--->
+                <!--Sliding text-->
+              <ul class="bxslider">
+                <li class="logo_text white_ f-center">
 
-                    <li class="is-active orbit-slide ">
-                      <div class="logo_text white_ f-center">
-                        <a href="#" class="" > CREATIVE VISUAL LIBRARY FOR DIGITAL CAMPAIGNS </a>
-                      </div>
-                    </li>
+                    <a href="#" class="" > VISUAL LIBRARY FOR DIGITAL AESTHETICS </a>
 
-<!--
-                    <li class="orbit-slide f-center">
-                      <div class="logo_text  white_ f-center">
-                        <a href="#" class="" > SOCIAL AND DIGITAL CURATOR </a>
-                      </div>
-                    </li>
--->
+                </li>
+
+                <li class="logo_text white_ f-center">
+
+                    <a href="#" class="" > SOCIAL AND DIGITAL STRATEGY </a>
+
+                </li>
+
+                <li class="logo_text white_ f-center">
+
+                    <a href="#" class="" > BASED IN NAIROBI KENYA </a>
+
+                </li>
               
               </ul>
-            
-<!--
-              <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0">
-                    <span class="show-for-sr">First slide details.</span>
-                    <span class="show-for-sr">Current Slide</span>
-                </button>
-                <button data-slide="1">
-                    <span class="show-for-sr">Second slide details.</span>
-                </button>
-              </nav>
--->
+
             </div>
 
               <!-- scroll down button -->
@@ -346,14 +336,14 @@ function closeDiv() {
                 <nav id="nav_" class="">
                     <ul class="head_ f-center div_ ul_">
                           <li class="tabs_">
-                              <a class="" href="#about">ABOUT</a>
+                              <a class="" href="#about">WHY 'ISHI'</a>
                           </li>
                           <li class="tabs_">
-                              <a class="" href="#services">SERVICES</a>
+                              <a class="" href="#services">WHAT WE DO</a>
                           </li>
 
                           <li class="tabs_ ">
-                              <a href="#p_two">GALLERY</a>
+                              <a href="#p_two">IMAGE LIBRARY</a>
                           </li>
                     </ul><!-- head_ end -->
                 </nav>
@@ -363,7 +353,7 @@ function closeDiv() {
                       </div>
 
                       <div class="tabs_">
-                          <a href="#">INSTAGRAM</a>
+                          <a href="#">ISHI GALLERY</a>
                       </div>
 
                       <div class="tabs_">
@@ -406,7 +396,7 @@ function closeDiv() {
 
             <div class="container">
 
-            <h2>SERVICES</h2>
+            <h2>WHAT WE DO</h2>
             <div id="sequence" class="seq">
 
                 <!---------------------------------------------->
@@ -454,6 +444,8 @@ function closeDiv() {
                 <!-- SLIDES -->
                 <div class="seq-screen">
                   <ul class="seq-canvas">
+
+                    <!-- step 1 -->
                     <li class="step1 seq-in">
                       <div data-seq class="seq-feature seq-half">
                         <div style="background-image: url(images/img/services1.jpg)">
@@ -461,19 +453,30 @@ function closeDiv() {
                         </div>
                       </div>
                       <div data-seq class="seq-content seq-half seq-valign">
-                        <div>
-                          <h2>VISUAL LIBRARY</h2>
-                          <div>
-                              <h4>Buy short/long-term Photo License </h4>
-                              <h4>Order customized bank of HD images</h4>
+                        <div class="content_cont">
+                          <h4>VISUAL LIBRARY FOR DIGITAL USE</h4>
+                          <div class="f-vert">
+                              <p>Creative, themed & finely-curated Photography for your Digital artworks, Social Media campaigns, Commercial advertisements, Visual Projects, Exhibitions & Digital Platforms
+                                  <br>
+                                  <br>
+                                Interested? You can either:
+                              </p>
+                              <ul class="list_">
+                                  <li>Purchase a bank of imagery for use on Digital</li>
+                                  <li>Buy a short or long-term Photo License of ownership</li>
+                                  <li>Book a shoot unique to your Visual needs</li>
+                              </ul>
+
                           </div >
 
                             <div class="btn_">
-                              <a class="button " href="gallery.html" target="_blank">Find Out More</a>
+                              <a class="button " href="#gallery" target="_blank">Find Out More</a>
                             </div>
                         </div>
                       </div>
                     </li>
+
+                    <!-- step 1 -->
                     <li class="step2">
                       <div data-seq class="seq-feature seq-half seq-half-right">
                         <div style="background-image: url(images/img/services2.jpg)">
@@ -481,15 +484,33 @@ function closeDiv() {
                         </div>
                       </div>
                       <div data-seq class="seq-content seq-half seq-half-left seq-valign">
-                        <div>
-                          <h2>SOCIAL/ DIGITAL</h2>
-                          <h4>
-                              Contact us for Social Strategy, Audits, <br> Reports, Content development &
-                              <br> Platforms Management</h4>
-<!--                                          <a class="seq-button" href="http://sequencejs.com/" target="_blank">Find Out More</a>-->
+                        <div class="content_cont">
+                          <h4>SOCIAL/DIGITAL STRATEGY</h4>
+                          <div class="f-vert">
+                              <p>Equiping you with
+                                  <br>
+                                  <br>
+                              </p>
+                              <ul class="list_">
+                                  <li>Social Media & Digital strategy</li>
+                                  <li>Content Creation & Platform Moderation</li>
+                                  <li>Social Analytics, Trends & Audits</li>
+                                  <li>Social Media & Digital Training</li>
+                                  <li>Digital Presentation Design & Aesthetics</li>
+                              </ul>
+
+                          </div >
+
+                            <div class="btn_">
+                              <a class="button " href="gallery.html" target="_blank">Find Out More</a>
+                            </div>
                         </div>
                       </div>
+
                     </li>
+
+
+
                     <li class="step3">
                       <div data-seq class="seq-feature seq-half seq-half-right">
                         <div style="background-image: url(images/img/services3.jpg)">
@@ -497,14 +518,26 @@ function closeDiv() {
                         </div>
                       </div>
                       <div data-seq class="seq-content seq-half seq-half-left seq-valign">
-                        <div>
-                          <h2>GET IT PRINTED</h2>
-                          <h4>Buy our Photography in large canvas prints <br>ranging from 24*16 inch to 60*30 </h4>
+                        <div class="content_cont">
+                          <h4>ONLINE PHOTO CURATION</h4>
+                          <div class="f-vert">
+                              <p>Creative Photography sold as Canvas Art via
+                                  <a href="#">
+                                  Ishi Gallery
+                                  </a>
+                                  <br>
+                                  <br>
+                              </p>
+                              <ul class="list_">
+                                  <li>Buy our Photography in large canvas prints (ranging from 24*16 inch to 60*30*)</li>
+                                  <li>Order discounted canvas Photos in bulk for your Interior Design</li>
+                              </ul>
+
+                          </div >
 
                             <div class="btn_">
-                              <a class="button " data-open="contactFormModal">Get a Quotation</a>
+                              <a class="button " href="gallery.html" target="_blank">Find Out More</a>
                             </div>
-
                         </div>
                       </div>
                     </li>
@@ -661,9 +694,17 @@ function closeDiv() {
     <footer>
         <div class="inner">
             <div class="cont_ f-vert">
-                <p class="ttl_">ISHI DIGITAL</p>
-                <p>Tel: +254 777 777</p>
-                <p>Email: info@ishidigital.com</p>
+                <p class="dscr_">
+                    <span class="ttl_">ISHI DIGITAL</span><br>Tel: +254 777 777
+                    <br>
+                    Email: <span class="eml_">info@ishidigital.com</span>
+                </p>
+                <div class="lg_ f-center">
+                    <img src="images/img/icon_twitter.png" href="#">
+                    <img src="images/img/icon_fb.png" href="#">
+                    <img src="images/img/icon_instagram.png" href="#">
+
+                </div>
                 <p class="copy_">&copy; 2016 Ishi Digital</p>
             </div>
 
@@ -776,7 +817,7 @@ function closeDiv() {
     <!----------------------------------------->
     <!-- Two up -->
     <script src="js/twoup/imagesloaded.pkgd.min.js"></script>
-<!--      <script src="js/twoup/hammer.min.js"></script>-->
+    <script src="js/twoup/hammer.min.js"></script>
     <script src="js/twoup/sequence.min.js"></script>
     <script src="js/twoup/sequence-theme.two-up.min.js"></script>
 

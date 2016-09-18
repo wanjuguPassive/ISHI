@@ -307,7 +307,7 @@ body {
   background: white;
   text-align: center;
   font-size: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Dosis', sans-serif !important;
   /* Hide the content until it is active and fades in */
   opacity: 0;
   /* When active, move the content over .3s */
@@ -588,7 +588,6 @@ body {
     margin-right: 1em;
     padding: .5em 1em;
     background: white;
-    font-family: 'Oswald', sans-serif;
     font-size: .875em;
     font-weight: 400;
     color: black;

@@ -7,11 +7,18 @@ $(document).ready(function() {
         1200 );
     });
 
-//    $(".scrollUp_").click(function() {
-//    $('html,body').animate({
-//        scrollTop: $("#intro").offset().top},
-//        'slow');
-//});
+
+    $(".scrollUp_").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#intro").offset().top},
+            'slow');
+    });
+
+    //bxSlider
+    $('.bxslider').bxSlider({
+        auto: true,
+        pause: 5000
+    });
 
 	// Initialize Masonry
 //	$('#content').masonry({
