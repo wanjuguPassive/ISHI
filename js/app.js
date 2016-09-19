@@ -1,5 +1,6 @@
-$(document).ready(function() {
 
+
+    "use strict";
     //Scroll Down Animation
     $(".scrollCue").click(function() {
         $('html,body').animate({
@@ -39,5 +40,5 @@ $(document).ready(function() {
 //        isFitWidth: true,
 //  });
 
-});
+
 

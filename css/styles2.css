@@ -148,6 +148,7 @@ body.home {}
             left: 0;
             z-index: ;
             height: 100vh;
+            min-height: 800px;
         }
 
         .home main .Background::after {
@@ -188,7 +189,7 @@ body.home {}
 
       .home .intro .slide_ {
         height: calc(100vh - 100px)!important;
-          min-height: 700px;
+          min-height: 600px;
           width: 100%;
 /*          z-index: 999;*/
       }
@@ -279,7 +280,7 @@ body.home {}
 
             .scrollCue.lndn_ {
                 position: absolute;
-                bottom: 37px;
+                bottom: 70px;
                 left: 50%;
             }
 
