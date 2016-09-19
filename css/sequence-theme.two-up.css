@@ -48,6 +48,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+    height: 100% !important;
 }
 
 .seq .seq-canvas {
@@ -512,7 +513,8 @@ body {
   .seq .seq-canvas > * {
     /* Make Sequence full screen in large layout */
     position: absolute;
-    height: calc(100vh - 150px)!important;
+    height: calc(100vh - 230px)!important;
+      min-height: 570px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -695,7 +697,7 @@ body {
 
 @media only screen and (min-height: 400px) {
   .seq .seq-next-button {
-    bottom: 20%;
+    bottom: 5%;
   }
 }
 

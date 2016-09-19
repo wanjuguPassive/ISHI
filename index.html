@@ -117,8 +117,7 @@
 
 <!-- ================================ -->
 <!--- SCRIPTS ----->
-<!--
-    <script language="javascript">
+<script language="javascript">
     document.onmousedown=disableclick;
     status="Ops this feature is disaled";
     function disableclick(event)
@@ -129,8 +128,7 @@
          return false;
        }
     }
-    </script>
--->
+</script>
 <script>
 function showDiv() {
     document.getElementById('orderedProductsTbl').style.display = "block";
@@ -254,8 +252,8 @@ function closeDiv() {
             <!-- the slides -->
             <div class="slide_ f-vert" >
             
-                <!--desktopOnly-->
-                <div class="logoHolder desktopOnly row columns">
+                <!--logo-->
+                <div class="logoHolder row columns">
                     <div class="logo f-center">
                         <p class="logoTitle white_ ">ISHI DIGITAL</p>
                     </div>
@@ -406,7 +404,7 @@ function closeDiv() {
                 <div class="seq-nav ind2">
 
                 <!-- NAvigation button -->
-                  <ul role="navigation" aria-label="Pagination" class="seq-pagination slides_">
+                  <ul role="navigation" aria-label="Pagination" class="seq-pagination">
 
                     <!-- step 1 -->
                     <li>
@@ -457,7 +455,10 @@ function closeDiv() {
                       <div data-seq class="seq-content seq-half seq-valign">
                         <div class="content_cont">
                           <h4>VISUAL LIBRARY FOR DIGITAL USE</h4>
-                          <div class="f-vert">
+
+                          <div id="wwd1"
+                               class="f-vert"
+                               style="display:none;">
                               <h5>Creative, themed & finely-curated Photography for your Digital artworks, Social Media campaigns, Commercial advertisements, Visual Projects, Exhibitions & Digital Platforms
                                   <br>
                                   <br>
@@ -471,8 +472,10 @@ function closeDiv() {
 
                           </div >
 
-                            <div class="btn_">
-                              <a class="button " href="#gallery" target="_blank">Find Out More</a>
+                            <div id="BTN" class="btn_">
+                              <a class="button" onclick="showDiv1()">Find Out More
+                              </a>
+
                             </div>
                         </div>
                       </div>
@@ -488,7 +491,9 @@ function closeDiv() {
                       <div data-seq class="seq-content seq-half seq-half-left seq-valign">
                         <div class="content_cont">
                           <h4>SOCIAL/DIGITAL STRATEGY</h4>
-                          <div class="f-vert">
+                          <div id="wwd2"
+                               class="f-vert"
+                               style="display:none;">
                               <h5>Equiping you with:
                                   <br>
                                   <br>
@@ -503,8 +508,8 @@ function closeDiv() {
 
                           </div >
 
-                            <div class="btn_">
-                              <a class="button " href="#gallery" target="_blank">Find Out More</a>
+                            <div id="BTN2" class="btn_">
+                              <a class="button" onclick="showDiv2()">Find Out More</a>
                             </div>
                         </div>
                       </div>
@@ -522,7 +527,9 @@ function closeDiv() {
                       <div data-seq class="seq-content seq-half seq-half-left seq-valign">
                         <div class="content_cont">
                           <h4>ONLINE PHOTO CURATION</h4>
-                          <div class="f-vert">
+                          <div id="wwd3"
+                               class="f-vert"
+                               style="display:none;">
                               <h5>Creative Photography sold as Canvas Art via
                                   <a href="#">
                                   Ishi Gallery
@@ -537,8 +544,8 @@ function closeDiv() {
 
                           </div >
 
-                            <div class="btn_">
-                              <a class="button " href="#gallery" target="_blank">Find Out More</a>
+                            <div id="BTN3" class="btn_">
+                              <a class="button" onclick="showDiv3()">Find Out More</a>
                             </div>
                         </div>
                       </div>
@@ -724,7 +731,19 @@ function closeDiv() {
 
 
     <script src="js/app.js"></script>
-<!--    <script src="js/skrollr.js"></script>-->
+    <script>
+        function showDiv1() {
+            document.getElementById('wwd1').style.display = "inherit"; document.getElementById('BTN1').setAttribute("style","visibility:hidden");
+        }
+
+        function showDiv2() {
+            document.getElementById('wwd2').style.display = "inherit"; document.getElementById('BTN2').setAttribute("style","visibility:hidden");
+        }
+
+        function showDiv3() {
+            document.getElementById('wwd3').style.display = "inherit"; document.getElementById('BTN3').setAttribute("style","visibility:hidden");
+        }
+    </script>
 
     <!----------------------------------------->
     <!-- Ben -->

@@ -39,13 +39,15 @@ body {
 }
 
 h2 {
-/*  margin: 0px 0px 40px 0px;*/
-  padding 10px;
+  margin: 50px 0px 0px 0px;
+/*  padding 20px;*/
   line-height: 160%;
   font-size: 1.625em;
   font-weight: 700;
   text-transform: uppercase;
     text-align: center;
+    height: 70px;
+    width: 100%;
 
 }
 
@@ -148,7 +150,7 @@ body.home {}
             left: 0;
             z-index: ;
             height: 100vh;
-            min-height: 800px;
+            min-height: 839.167px;
         }
 
         .home main .Background::after {
@@ -157,13 +159,13 @@ body.home {}
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent 50%, rgba(0, 0, 0, 0.5));
         }
 
     .home main .intro {
-      height: 100vh;
-      min-height: 800px;
+      height: 100%;
+      min-height: 839.167px;
       text-align: center;
       position: relative;
     }
@@ -473,9 +475,7 @@ blockquote:before, blockquote:after {
 
  /* ====\\=== ABOUT ===//==== */
 #about{
-    height: calc(100vh - 150px);
-    min-height: 600px;
-/*    margin-top: 20px !important;*/
+    height: auto;
 }
 
     #about .container {
@@ -495,15 +495,26 @@ blockquote:before, blockquote:after {
 #services {
 /*    min-height: calc(100vh - 150px)!important;*/
     min-height: 700px;
-    height: calc(100vh - 50px)!important;;
+    height: calc(100vh - 150px)!important;;
     position: relative;
 }
 
     #services .container {
         width: 100%;
-        height: 80%;
+        height: 100%;
     }
 
+    #services .container h2 {
+/*
+        width: 100%;
+        height: 70px;
+*/
+    }
+.seq-half {}
+
+    #services .container #sequence {
+        border: #0e0e0e .5px solid;
+    }
     #services ul.list_ {
         list-style:disc;
         width: 80%;
@@ -518,7 +529,26 @@ blockquote:before, blockquote:after {
         padding: 20px !important;
         width: 100%;
         max-width: 500px;
-}
+    }
+
+    .content_cont h4{
+        padding: 10px 0px 20px 0px;
+
+    }
+
+    .content_cont h5 {
+        padding: 10px;
+
+    }
+
+    .content_cont ul {
+        padding: 15px 10px 15px 0px;
+        text-align: justify;
+        margin-left: auto;
+/*        width: 100%;*/
+
+    }
+
 
 /* ===\\================//=== *
  * ====\\===PAGE 2 ===//==== *

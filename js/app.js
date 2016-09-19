@@ -21,6 +21,13 @@
         pause: 5000
     });
 
+    //WHAT WE DO - Click to reveal
+
+
+
+
+
+
 	// Initialize Masonry
 //	$('#content').masonry({
 //		columnWidth: 320,
