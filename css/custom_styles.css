@@ -9,12 +9,11 @@
 @import 'https://fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700';
 /*font-family: 'Cormorant SC', serif;*/
 
-<style>
 @import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900';
 /*font-family: 'Raleway', sans-serif !important;*/
 
 
-</style>
+
 html,
 body,
 div,
@@ -34,10 +33,11 @@ html, body {
     border: 0;
     line-height: 1;
     margin: 0;
-    font-size: .9rem;
+    font-size: .8rem;
 
-    font-family: 'Dosis', sans-serif !important;
-/*    font-family: 'Raleway', sans-serif !important;*/
+/*    font-family: 'Dosis', sans-serif !important;*/
+    font-family: 'Cormorant', serif;
+
 
     -webkit-background-size: cover;
     background-size: cover;
@@ -52,8 +52,9 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-weight: 400;
-    font-family: 'Dosis', sans-serif !important;
-/*    font-family: 'Raleway', sans-serif !important;*/
+/*    font-family: 'Dosis', sans-serif !important;*/
+/*    font-family: 'Cormorant SC', serif;*/
+    font-family: 'Cormorant', serif;
 }
 
 footer {

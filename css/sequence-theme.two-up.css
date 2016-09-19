@@ -513,12 +513,13 @@ body {
   .seq .seq-canvas > * {
     /* Make Sequence full screen in large layout */
     position: absolute;
-    height: calc(100vh - 230px)!important;
+    height: calc(100vh - 220px)!important;
       min-height: 570px;
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
+/*      border-top: #0e0e0e .3px solid;*/
   }
 
   .seq .seq-canvas {

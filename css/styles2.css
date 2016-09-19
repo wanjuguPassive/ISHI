@@ -7,6 +7,53 @@
     -webkit-backface-visibility: hidden;
 }
 
+ html,
+body,
+div,
+h1,
+
+video {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+html, body {
+    width: 100%;
+    min-width: 100%;
+/*    min-height: 800px;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    letter-spacing: -.03rem;
+    margin: 0;
+    font-size: .95rem;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #0e0e0e !important;
+    position: relative;
+}
+
+.row, .columns, .column {
+    margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+
+}
+
+main {
+    height: auto;
+    position: relative;
+}
+footer {
+    position: relative;
+}
+
+
 html {
     height: auto;
     width: 100%;
@@ -19,7 +66,9 @@ body {
     font-size: 12px;
     font-weight: 300;
     background-color: #fff;
-    font-family: 'Dosis', sans-serif !important;
+/*    font-family: 'Dosis', sans-serif !important;*/
+/*    font-family: 'Cormorant SC', serif !important;*/
+    font-family: 'Cormorant', serif;
 }
 
 #whole, #p_one, #p_two {
@@ -43,7 +92,7 @@ h2 {
 /*  padding 20px;*/
   line-height: 160%;
   font-size: 1.625em;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
     text-align: center;
     height: 70px;
@@ -51,13 +100,16 @@ h2 {
 
 }
 
+
+
 /*----------------------------------------------*/
 .btn_ .button {
     padding: 15px 40px;
     font-weight: 500;
     font-size: .9rem;
     text-transform: uppercase;
-    font-family: 'Dosis', sans-serif !important;
+/*    font-family: 'Dosis', sans-serif !important;*/
+    font-family: 'Cormorant SC', serif !important;
     background-color: #0e0e0e;
     color: #fff;
     margin-top: 30px !important;
@@ -322,7 +374,7 @@ body.home {}
 
             .scrollUp_ {
 
-                border: 2.2px solid #000;
+                border: 1px solid #0e0e0e;
                 border-radius: 25px;
                 -webkit-border-radius: 25px;
                 -moz-border-radius: 25px;
@@ -352,6 +404,7 @@ body.home {}
 .homeHeader {
         z-index: 999;
         height: 150px;
+    border-bottom: #0e0e0e solid .5px;
     }
 
     .homeHeader .logoTitle {
@@ -409,20 +462,21 @@ body.home {}
                 margin: 0 auto;
                 padding: 10px 25px;
                 font-size: 1rem;
+                font-weight: 700;
                 line-height: 1.2;
-    /*            letter-spacing: -.1rem;*/
+/*                letter-spacing: -.01rem;*/
                 font-weight: 500;
-                color: #0e0e0e;
+                color: #000;
             }
 
             #header .head_ .tabs_ a.select_ {
-                border: solid .5px #0e0e0e;
+                border: solid 1px #0e0e0e;
                 background: #fff;
                 color: #0e0e0e;
             }
 
             a.nav-active {
-                border: solid .5px #0e0e0e;
+                border: solid 1px #0e0e0e;
                 background: #fff;
                 color: #0e0e0e;
             }
@@ -513,7 +567,7 @@ blockquote:before, blockquote:after {
 .seq-half {}
 
     #services .container #sequence {
-        border: #0e0e0e .5px solid;
+/*        border: #0e0e0e .5px solid;*/
     }
     #services ul.list_ {
         list-style:disc;
@@ -522,7 +576,7 @@ blockquote:before, blockquote:after {
     }
     #services li {
         list-style:disc;
-            ;
+
     }
 
     .content_cont {
@@ -629,71 +683,93 @@ blockquote:before, blockquote:after {
 /* ===\\================//=== *
  * ====\\=== CONTACT ===//==== *
  * =====\\============//===== */
+.Contacts_ .homeHeader {
+    position: fixed;
+    background: #fff;
+}
+
 #contact {
-    height: calc(100vh - 150px);
-    min-height: 500px;
+    height: auto;
+    min-height: calc(100vh - 150px);
+    margin-top: 150px !important;
 }
 
     .contact_cont {
         height: 100%;
-        min-height: 500px;
-        width: 80%;
+        min-height: calc(100vh - 150px);
+        width: 90%;
+        min-width: 700px;
         max-width: 1200px;
         position: relative;
     }
 
+/*
     .contact_cont>* {
          height: 100%;
     }
+*/
 
     #contact #banner_ {
         width: 30%;
         max-width: 350px;
+        height: 100%;
+        min-height: calc(100vh - 100px);
 /*        background-image: url(/images/img/contact3.jpg);*/
     }
 
     #contact #abt_ {
         min-width: calc(100% - 350px);
         width: 70%;
-        max-width: 700px;
+        height: 100%;
+        min-height: 100vh;
+        min-height: calc(100vh - 150px);
     }
 
     /* Small only */
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (max-width: 49.9375em) {
         .contact_cont {
             width: 100%;
         }
 
         #contact #banner_ {
             display: none;
+            width: 0 !important;
         }
 
         #contact #abt_ {
-            width: 95%;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+
         }
 
     }
 
     /* Medium only */
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    @media screen and (min-width: 50em) and (max-width: 63.9375em) {
         .contact_cont {
-            width: 80%;
+            width: 100%;
+            height: 750px;
         }
 
         #contact #banner_ {
            width: 20%;
             max-width: 350px;
+            margin: 0 !important;
+            height: 110% !important;
         }
 
         #contact #abt_ {
-            min-width: calc(100vh - 250px);
+/*            min-width: calc(100vh - 250px);*/
             width: 80%;
             max-width: 700px;
+            margin: 0 !important;
         }
     }
 
         #abt_ .josie {
-            width: 70%;
+            width: 90%;
+/*            padding: 10px;*/
         }
 
 
@@ -701,6 +777,7 @@ blockquote:before, blockquote:after {
             width: 80%;
             max-width: 600px;
             height: auto;
+            margin-top: 50px;
 /*            min-height: 00px;*/
 /*            margin: 20px;*/
         }
@@ -720,7 +797,7 @@ blockquote:before, blockquote:after {
             }
 
             .talk_ .inner .btn_ {
-            margin: 10px 0px;
+            margin-top: -30px;
             width: 100%;
             }
 
