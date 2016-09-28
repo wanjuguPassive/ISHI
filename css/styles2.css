@@ -28,6 +28,7 @@ html, body {
     letter-spacing: -.03rem;
     margin: 0;
     font-size: .95rem;
+    font-size: 85%;
 
     -webkit-background-size: cover;
     background-size: cover;
@@ -42,7 +43,6 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
-
 }
 
 main {
@@ -92,7 +92,7 @@ h2 {
 /*  padding 20px;*/
   line-height: 160%;
   font-size: 1.625em;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase;
     text-align: center;
     height: 70px;
@@ -334,7 +334,7 @@ body.home {}
 
             .scrollCue.lndn_ {
                 position: absolute;
-                bottom: 100px;
+                bottom: 120px;
                 left: 50%;
             }
 
@@ -712,7 +712,7 @@ blockquote:before, blockquote:after {
     #contact #banner_ {
         width: 30%;
         max-width: 350px;
-        height: 100%;
+        height: 700px !important;
         min-height: calc(100vh - 100px);
 /*        background-image: url(/images/img/contact3.jpg);*/
     }
@@ -878,6 +878,14 @@ blockquote:before, blockquote:after {
 
         }
 
+    #contact .cont_ p{
+        width: 300px;
+        height: 100%;
+        text-align: center;
+         font-size: 1rem;
+        font-weight: bold;
+    }
+
 /* ===\\================//=== *
  * ====\\=== INSTAGRAM ===//==== *
  * =====\\============//===== */
@@ -908,7 +916,7 @@ footer {
     footer p {
       color: #cbcbcb;
     letter-spacing: .05em;
-      font-size: .8rem;
+/*      font-size: .rem;*/
     }
 
       .no-touch footer p a:hover {
@@ -923,7 +931,7 @@ footer {
 
     footer .cont_ .ttl_ {
         font-weight: 800 !important;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .eml_ {
